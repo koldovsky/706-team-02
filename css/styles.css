@@ -215,7 +215,7 @@ html {
     background-color: #d55959;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: 0.6s ease;
 }
 
 .date__pub {
@@ -223,4 +223,14 @@ html {
     font-weight: bold;
     color: #0a0c0d;
 }
+
+.fa {
+    text-decoration: none;
+    color: #0a0c0d;
+}
+
+.fa:hover {
+    color: #d62324;
+}
+
 /* finished*/
