@@ -74,6 +74,9 @@
     .footer__menu a:hover {
         color: #d62324;
     }
+    nav.footer__menu {
+        position: absolute;
+    }
 }
 
 /*footer mobile*/
