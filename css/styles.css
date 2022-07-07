@@ -121,3 +121,100 @@
 }
 
 /*footer mobile end*/
+
+/* Testimonials Lesia Derkach*/
+
+.main__testimonials {
+    background-color: rgb(241, 237, 225);
+    width: 100vw;
+    margin: 0px 120px;
+    padding: 0px 15px;
+}
+
+.testimonials__title {
+    color: #d62324;
+    font-family: 'homemade apple';
+    font-size: 26px;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    margin: 0;
+    border: 0;
+}
+
+.testimonials__subtitle {
+    color: #16120f;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.testimonials__subtitle::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    display: block;
+    position: relative;
+    background-color: #d62324;
+    bottom: 45%;
+    left: 48%;
+    margin-top: 20px;
+}
+
+
+p {
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.slideshow-container__exponent-photo {
+    display: flex;
+    position: relative;
+    left: 45.4%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.slideshow-container__exponent-name {
+    font-family: 'Rajdhani', sans-serif;
+    color: #d62324;
+    text-align: center;
+}
+
+
+.slideshow-container__exponent-feedback {
+    letter-spacing: .05em;
+    color: #707070;
+    text-transform: none;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: rgb(241, 237, 225);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #d55959;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/* finished*/
