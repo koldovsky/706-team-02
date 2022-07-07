@@ -126,7 +126,7 @@
 
 .main__testimonials {
     background-color: rgb(241, 237, 225);
-    width: 100vw;
+    width: 100%;
     margin: 0px 120px;
     padding: 0px 15px;
 }
@@ -184,7 +184,7 @@ p {
 
 .slideshow-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
 }
