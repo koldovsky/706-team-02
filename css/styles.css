@@ -1,7 +1,10 @@
 /* additional formatting Lesia*/
-*{box-sizing: border-box;
-    margin:0;
-    padding:0;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /*finished*/
 
 /*footer css Yevhen*/
@@ -24,7 +27,7 @@
     }
 
     .footer__sidebar-content .logo {
-        width: 126px;
+        /*width: 126px; moved to html*/
         height: auto;
         margin: auto;
     }
@@ -80,20 +83,29 @@
     .footer__menu a:hover {
         color: #d62324;
     }
+
     nav.footer__menu {
         position: absolute;
     }
 }
 
 /*footer mobile*/
+
 @media (max-width: 850px) {
-    img.logo {
-        width: 34%;
-        padding: 50px 34%;
+    .footer {
+        border-top: 0.1em solid #323232;
+    }
+
+    .footer__sidebar {
+        text-align: center;
+    }
+
+    .footer__sidebar-content {
+        padding-top: 20%;
     }
 
     .footer__row {
-        max-width: 39%;
+        max-width: 66%;
         padding: 35px 0 25px 28%;
         text-align: center;
         line-height: 3;
@@ -110,6 +122,7 @@
 
     .footer__container {
         border-bottom: 0.1em solid #323232;
+        margin: 0 24px;
     }
 
     .rights,
