@@ -1,3 +1,9 @@
+/* additional formatting Lesia*/
+*{box-sizing: border-box;
+    margin:0;
+    padding:0;}
+/*finished*/
+
 /*footer css*/
 .footer {
     background-color: #16120f;
@@ -130,8 +136,8 @@
 .main__testimonials {
     background-color: rgb(241, 237, 225);
     width: 100%;
-    margin: 0px 120px;
-    padding: 0px 15px;
+    margin: 0;
+    padding: 0;
 }
 
 .testimonials__title {
@@ -205,10 +211,6 @@
     text-transform: none;
 }
 
-html {
-    box-sizing: border-box;
-    background-color: rgb(241, 237, 225);
-}
 
 .dot {
     cursor: pointer;
