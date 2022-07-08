@@ -250,5 +250,26 @@
 .fa:hover {
     color: #d62324;
 }
+.blog__first-img {
+    padding: 20px;
+    margin: 20px;
+}
+.blog__second-img {
+    padding: 20px;
+    margin: 20px;
+}
+.blog__third-img {
+    padding: 20px;
+    margin: 20px;
+}
+.blog__header {
+    margin: 10px;
+}
+.blog__last-text {
+    padding: 10px;
+}
+.blog__special-font {
+    padding: 10px;
+}
 
 /* finished*/
