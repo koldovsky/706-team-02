@@ -1,11 +1,5 @@
-/* additional formatting Lesia*/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/*finished*/
+@import url(common.css);
+@import url(testimonials-contacts.css);
 
 /*footer css Yevhen*/
 .footer {
@@ -144,130 +138,29 @@
 
 /*footer mobile end Yevhen*/
 
-/* Testimonials Lesia Derkach*/
-
-.main__testimonials {
-    background-color: rgb(241, 237, 225);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.testimonials__title {
-    color: #d62324;
-    font-family: 'homemade apple';
-    font-size: 26px;
-    margin: 0;
-    border: 0;
-    text-align: center;
-    margin: 0;
-    border: 0;
-}
-
-.testimonials__subtitle {
-    color: #16120f;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 56px;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 20px;
-}
-
-.testimonials__subtitle::after {
-    content: "";
-    width: 50px;
-    height: 2px;
-    display: block;
-    position: relative;
-    background-color: #d62324;
-    bottom: 45%;
-    left: 48%;
-    margin-top: 20px;
-}
-
-
-.testimonials__introduction-phrase {
-    font-family: 'Roboto';
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-}
-
-.slideshow-container__exponent-photo {
-    display: flex;
-    position: relative;
-    left: 45.4%;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    justify-content: center;
-    object-fit: cover;
-}
-
-.slideshow-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-
-.slideshow-container__exponent-name {
-    font-family: 'Rajdhani', sans-serif;
-    color: #d62324;
-    text-align: center;
-}
-
-
-.slideshow-container__exponent-feedback {
-    letter-spacing: .05em;
-    color: #707070;
-    text-transform: none;
-}
-
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #d55959;
-    border-radius: 50%;
-    display: inline-block;
-    transition: 0.6s ease;
-}
-
-.date__pub {
-    letter-spacing: .1em;
-    font-weight: bold;
-    color: #0a0c0d;
-}
-
-.fa {
-    text-decoration: none;
-    color: #0a0c0d;
-}
-
-.fa:hover {
-    color: #d62324;
-}
 .blog__first-img {
     padding: 20px;
     margin: 20px;
 }
+
 .blog__second-img {
     padding: 20px;
     margin: 20px;
 }
+
 .blog__third-img {
     padding: 20px;
     margin: 20px;
 }
+
 .blog__header {
     margin: 10px;
 }
+
 .blog__last-text {
     padding: 10px;
 }
+
 .blog__special-font {
     padding: 10px;
 }
@@ -276,65 +169,68 @@
 
 /* Dmitry Degtyarev block-2 */
 .main__services {
-	display: flex;
+    display: flex;
 }
 
 .card__title {
-	text-transform: uppercase;
-	margin: 0;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .divider {
-	 border-bottom: 2px solid #f00;
-	 width: 50px;
-	 margin: 15px 0px;
+    border-bottom: 2px solid #f00;
+    width: 50px;
+    margin: 15px 0px;
 }
 
-.card__subtitle {
-   
-}
+.card__subtitle {}
 
 .services__card {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	width: 33.3%;
-	padding: 15px;
-	margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 33.3%;
+    padding: 15px;
+    margin: 10px;
 }
 
-.man { /*multiclass services__card*/
-	background-image: url(img_css/boxing_human_card.png); 
+.man {
+    /*multiclass services__card*/
+    background-image: url(img_css/boxing_human_card.png);
 }
-.child { /*multiclass services__card*/
-	background-image: url(img_css/boxing_child_card.png); 
+
+.child {
+    /*multiclass services__card*/
+    background-image: url(img_css/boxing_child_card.png);
 }
-.woman { /*multiclass services__card*/
-	background-image: url(img_css/boxing_woman_card.png); 
+
+.woman {
+    /*multiclass services__card*/
+    background-image: url(img_css/boxing_woman_card.png);
 }
 
 .card__button-text {
-	text-transform: uppercase;
-	font-size: 12px;
-	text-align: center
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center
 }
 
 .card__inner a {
     margin-top: 15px;
-	display: block;
-	width: 166px;
-	padding: 10px 5px;
-	background: #f00;
-	color: #fff;
-	text-decoration: none;
+    display: block;
+    width: 166px;
+    padding: 10px 5px;
+    background: #f00;
+    color: #fff;
+    text-decoration: none;
 }
 
 .card__inner a:hover {
-	color: #fff;
+    color: #fff;
     background: #333;
     tansition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear; 
+    -moz-transition: all 0.3s linear;
 }
 
 /* Dmitry Degtyarev block-2 */

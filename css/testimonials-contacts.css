@@ -1,0 +1,104 @@
+/* Testimonials CSS*/
+.testimonials {
+    background-color: rgb(241, 237, 225);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials__title {
+    color: #d62324;
+    font-family: 'homemade apple';
+    font-size: 26px;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    margin: 0;
+    border: 0;
+}
+
+.testimonials__subtitle {
+    color: #16120f;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.testimonials__subtitle::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    display: block;
+    position: relative;
+    background-color: #d62324;
+    bottom: 45%;
+    left: 48%;
+    margin-top: 20px;
+}
+
+
+.testimonials__introduction-phrase {
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.slideshow-container__exponent-photo {
+    display: flex;
+    position: relative;
+    left: 45.4%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.slideshow-container__exponent-name {
+    font-family: 'Rajdhani', sans-serif;
+    color: #d62324;
+    text-align: center;
+}
+
+
+.slideshow-container__exponent-feedback {
+    letter-spacing: .05em;
+    color: #707070;
+    text-transform: none;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #d55959;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.date__pub {
+    letter-spacing: .1em;
+    font-weight: bold;
+    color: #0a0c0d;
+}
+
+.fa {
+    text-decoration: none;
+    color: #0a0c0d;
+}
+
+.fa:hover {
+    color: #d62324;}
