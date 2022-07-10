@@ -1,0 +1,15 @@
+.blog__header {
+    text-align: center;
+}
+.blog__container {
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.blog__container-content {
+    display: flex;
+    padding: 30px;
+}
+.blog__container-header {
+    text-align: center;
+}
