@@ -1,13 +1,12 @@
 /* Testimonials CSS*/
-.testimonials {
+.main__testimonials {
     background-color: rgb(241, 237, 225);
     width: 100%;
-    margin: 0;
-    padding: 0;
+
 }
 
 .testimonials__title {
-    color: #d62324;
+    color: var(--red);
     font-family: 'homemade apple';
     font-size: 26px;
     margin: 0;
@@ -32,7 +31,7 @@
     height: 2px;
     display: block;
     position: relative;
-    background-color: #d62324;
+    background-color: var(--red);
     bottom: 45%;
     left: 48%;
     margin-top: 20px;
@@ -46,6 +45,14 @@
     margin: 0;
 }
 
+.slideshow-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
 .slideshow-container__exponent-photo {
     display: flex;
     position: relative;
@@ -57,12 +64,7 @@
     object-fit: cover;
 }
 
-.slideshow-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
+
 
 .slideshow-container__exponent-name {
     font-family: 'Rajdhani', sans-serif;
@@ -76,6 +78,7 @@
     color: #707070;
     text-transform: none;
 }
+
 
 
 .dot {
@@ -92,13 +95,14 @@
 .date__pub {
     letter-spacing: .1em;
     font-weight: bold;
-    color: #0a0c0d;
+    color: var(--black);
 }
 
 .fa {
     text-decoration: none;
-    color: #0a0c0d;
+    color: var(--black);
 }
 
 .fa:hover {
-    color: #d62324;}
+    color: var(--red);
+}
