@@ -68,7 +68,7 @@
 
 .slideshow-container__exponent-name {
     font-family: 'Rajdhani', sans-serif;
-    color: #d62324;
+    color: var(--red);
     text-align: center;
 }
 
