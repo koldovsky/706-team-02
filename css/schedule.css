@@ -1,0 +1,107 @@
+section.schedule {
+    text-align: center;
+    padding: 100px 0;
+    background-color: var(--biege);
+}
+
+h2.schedule__h2 {
+    color: var(--red);
+    font-size: 26px;
+    line-height: 1.43;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: .05em;
+    text-transform: none;
+}
+
+aside.schedule__title {
+    display: block;
+}
+
+aside.schedule__title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--red);
+    left: 48%;
+    bottom: 70%;
+}
+
+section.schedule aside.schedule__title {
+    font-size: 56px;
+    color: #16120f;
+    line-height: 1.2;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    padding-bottom: 20px;
+}
+
+table.schedule__table {
+    text-align: start;
+    border: 0.1em solid #a9a9a9;
+    /*border-collapse: collapse;*/
+    position: inherit;
+    margin: 65px 363px;
+    padding: 15px;
+    border-left: none;
+    border-bottom: none;
+}
+
+tr.schedule__table-cols {
+    background: var(--red);
+}
+
+td {
+    padding: 15px 20px;
+    border: 0.1em solid #a9a9a9;
+    width: 282.5px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: .05em;
+    color: #707070;
+    text-transform: none;
+    border-right: none;
+    border-top: none;
+}
+
+tr th {
+    color: var(--white);
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 15px 20px;
+    border: 0.1em solid #a9a9a9;
+    border-collapse: collapse;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+}
+
+td.schedule__rows-day {
+    font-size: 18px;
+    line-height: 1.56;
+    font-family: Roboto, sans-serif;
+    font-weight: 500 !important;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #16120f;
+    text-transform: none;
+    height: min-content;
+}

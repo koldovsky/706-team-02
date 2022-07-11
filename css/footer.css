@@ -1,0 +1,136 @@
+/*footer css Yevhen starts*/
+.footer {
+    background-color: #16120f;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*display: inline-block;
+    max-height: 100%;*/
+}
+
+@media (min-width: 851px) {
+    .footer__container {
+        border-bottom: 0.1em solid #323232;
+        display: flex;
+        width: 1170px;
+        margin-right: 307px;
+        margin-left: 307px;
+        padding: 30px 0;
+    }
+
+    .footer__sidebar-content .logo {
+        /*width: 126px; moved to html*/
+        height: auto;
+        margin: auto;
+    }
+
+    .footer__row {
+        max-width: 67%;
+        width: calc(100% + 20px);
+        padding: 35px 0 0 563px;
+    }
+
+    .sub__footer {
+        background-color: #16120f;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+    }
+
+    .sub__footer_left-block {
+        padding-left: 307px;
+    }
+
+    .rights,
+    .copiright {
+        color: #a9a9a9;
+        letter-spacing: .1em;
+        font-size: 14px;
+        line-height: 1.4;
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 500px;
+    }
+
+    .rights {
+        margin-left: 300px;
+        display: contents;
+    }
+
+    .sub__footer_right-block {
+        /*width: 150px;*/
+        padding-left: 409px;
+    }
+
+    .footer__menu a {
+        color: var(--white);
+        text-decoration: none;
+        font-family: Roboto, sans-serif;
+        font-weight: 550;
+        margin-left: 20px;
+    }
+
+    .footer__menu a:hover {
+        color: var(--red);
+    }
+
+    nav.footer__menu {
+        position: absolute;
+    }
+}
+
+/*footer mobile*/
+
+@media (max-width: 850px) {
+    .footer {
+        border-top: 0.1em solid #323232;
+    }
+
+    .footer__sidebar {
+        text-align: center;
+    }
+
+    .footer__sidebar-content {
+        padding-top: 20%;
+    }
+
+    .footer__row {
+        max-width: 66%;
+        padding: 35px 0 25px 28%;
+        text-align: center;
+        line-height: 3;
+    }
+
+    .footer__menu a {
+        color: var(--white);
+        text-decoration: none;
+        font-family: Roboto, sans-serif;
+        font-weight: 550;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer__container {
+        border-bottom: 0.1em solid #323232;
+        margin: 0 24px;
+    }
+
+    .rights,
+    .copiright {
+        color: #a9a9a9;
+        letter-spacing: .1em;
+        font-size: 14px;
+        line-height: 1.4;
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        margin: 5px 0 10px 10px;
+        text-align: center;
+    }
+
+    .sub__footer {
+        padding-bottom: 10px;
+    }
+}
+
+/*footer mobile end*/
