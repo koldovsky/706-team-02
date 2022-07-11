@@ -96,8 +96,8 @@
     color: #fff;
     background: #333;
     transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
+    --webkit-transition: all 0.3s linear;
+    --moz-transition: all 0.3s linear;
 }
 
 /* Dmitry Degtyarev block-2 */
