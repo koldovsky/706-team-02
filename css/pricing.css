@@ -10,17 +10,17 @@
 	letter-spacing: 1px;
 }
 
-.pricing-sub-title{
-font-family: Rajdhani;
-font-size: 47px;
-text-align: center;
-letter-spacing: normal;
-text-transform: uppercase;
-position: relative;
+.pricing-sub-title {
+	font-family: Rajdhani;
+	font-size: 47px;
+	text-align: center;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	position: relative;
 }
 
 .pricing-sub-title::after {
-  content: "";
+	content: '';
 	width: 50px;
 	height: 2px;
 	background-color: var(--red);
@@ -28,4 +28,65 @@ position: relative;
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.pricing-list{
+	display: flex;
+}
+
+.pricing-item {
+	background: var(--white);
+	padding: 40px 37px;
+	box-shadow: 0 4px 13px 0 rgb(28 30 30 / 18%);
+}
+
+.pricing-item-title {
+	text-transform: uppercase;
+	font-family: Rajdhani;
+	font-size: 23px;
+}
+
+.pricing-item-price {
+	font-family: Rajdhani;
+	font-size: 47px;
+	color: var(--red);
+	position: relative;
+}
+
+.pricing-item-price::after{
+	content: '';
+	width: 50px;
+	height: 2px;
+	background-color: var(--red);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.pricing-time{
+	font-family: Roboto;
+	font-size: 14px;
+	letter-spacing: 4px;
+
+}
+
+.pricing-item-list li {
+	font-family: Roboto;
+	font-size: 16px;
+	color: #707070;
+}
+
+.pricing-item-list li.un-checked {
+  list-style-image: url(../img/un-checked.svg);
+}
+
+.pricing-item-list li.checked {
+  list-style-image: url(../img/checked.svg);
+}
+
+.pricing-button{
+	color: var(--red);
+
 }
