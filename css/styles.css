@@ -3,6 +3,7 @@
 @import url(blog.css);
 @import url(footer.css);
 @import url(schedule.css);
+@import url(pricing.css);
 
 .blog__first-img {
     padding: 20px;

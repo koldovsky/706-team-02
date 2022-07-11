@@ -1,0 +1,31 @@
+.pricing {
+	background-color: var(--biege);
+}
+.pricing-title {
+	font-family: 'Homemade Apple';
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--red);
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.pricing-sub-title{
+font-family: Rajdhani;
+font-size: 47px;
+text-align: center;
+letter-spacing: normal;
+text-transform: uppercase;
+position: relative;
+}
+
+.pricing-sub-title::after {
+  content: "";
+	width: 50px;
+	height: 2px;
+	background-color: var(--red);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
