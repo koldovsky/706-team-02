@@ -20,14 +20,10 @@ aside.schedule__title {
     display: block;
 }
 
-aside.schedule__title::after {
-    content: "";
-    position: absolute;
+.schedule__title-divider {
+    border-bottom: 2px solid var(--red);
     width: 50px;
-    height: 2px;
-    background-color: var(--red);
-    left: 48%;
-    bottom: 70%;
+    margin: -3px 48%;
 }
 
 section.schedule aside.schedule__title {
@@ -46,7 +42,6 @@ section.schedule aside.schedule__title {
 table.schedule__table {
     text-align: start;
     border: 0.1em solid #a9a9a9;
-    /*border-collapse: collapse;*/
     position: inherit;
     margin: 65px 363px;
     padding: 15px;
@@ -104,4 +99,15 @@ td.schedule__rows-day {
     color: #16120f;
     text-transform: none;
     height: min-content;
+}
+
+/*mobile start*/
+@media (max-width: 850px) {
+    table.schedule__table {
+        display: contents;
+    }
+
+    tr :last-of-type {
+        display: none;
+    }
 }
