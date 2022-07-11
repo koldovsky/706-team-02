@@ -30,7 +30,7 @@
 	transform: translateX(-50%);
 }
 
-.pricing-list{
+.pricing-list {
 	display: flex;
 }
 
@@ -53,7 +53,7 @@
 	position: relative;
 }
 
-.pricing-item-price::after{
+.pricing-item-price::after {
 	content: '';
 	width: 50px;
 	height: 2px;
@@ -64,12 +64,10 @@
 	transform: translateX(-50%);
 }
 
-
-.pricing-time{
+.pricing-time {
 	font-family: Roboto;
 	font-size: 14px;
 	letter-spacing: 4px;
-
 }
 
 .pricing-item-list li {
@@ -79,14 +77,20 @@
 }
 
 .pricing-item-list li.un-checked {
-  list-style-image: url(../img/un-checked.svg);
+	list-style-image: url(../img/un-checked.svg);
 }
 
 .pricing-item-list li.checked {
-  list-style-image: url(../img/checked.svg);
+	list-style-image: url(../img/checked.svg);
 }
 
-.pricing-button{
-	color: var(--red);
-
+.pricing-button {
+	background-color: var(--red);
+	color: #ffff;
+	border: none;
+	margin: 10px;
+	padding: 22px 52px;
+	box-shadow: 0 4px 14px 0 rgb(45 45 45 / 26%);
+	font-size: 12px;
+	text-transform: uppercase;
 }
