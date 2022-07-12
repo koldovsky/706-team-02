@@ -10,7 +10,7 @@
 .pricing-title {
 	font-family: 'Homemade Apple';
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 26px;
 	color: var(--brand-color);
 	text-align: center;
 	letter-spacing: 1px;
@@ -41,6 +41,7 @@
  align-items: stretch;
  justify-content: center;
  list-style: none;
+
 }
 .pricing-list > li {
   flex-basis: 33%;
@@ -51,6 +52,7 @@
 	background: var(--subtitle-text-color1);
 	padding: 40px 37px;
 	box-shadow: 0 4px 13px 0 rgb(28 30 30 / 18%);
+	text-align: center;
 
 }
 
@@ -58,6 +60,7 @@
 	text-transform: uppercase;
 	font-family: Rajdhani;
 	font-size: 23px;
+
 }
 
 .pricing-item-price {
@@ -65,6 +68,8 @@
 	font-size: 47px;
 	color: var(--brand-color);
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 .pricing-item-price::after {
@@ -88,14 +93,21 @@
 	font-family: Roboto;
 	font-size: 16px;
 	color: #707070;
+	text-align: left;
+	line-height: 24px;
+	margin-bottom: 16px;
+
+
 }
 
 .pricing-item-list li.un-checked {
 	list-style-image: url(../img/un-checked.svg);
+
 }
 
 .pricing-item-list li.checked {
 	list-style-image: url(../img/checked.svg);
+
 }
 
 .pricing-button {
