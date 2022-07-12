@@ -1,6 +1,12 @@
 .pricing {
 	background-color: var(--biege);
 }
+
+.pricing-content {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
 .pricing-title {
 	font-family: 'Homemade Apple';
 	font-weight: 400;
@@ -32,12 +38,20 @@
 
 .pricing-list {
 	display: flex;
+ align-items: stretch;
+ justify-content: center;
+ list-style: none;
+}
+.pricing-list > li {
+  flex-basis: 33%;
+	padding: 30px 15px 0;
 }
 
 .pricing-item {
 	background: var(--white);
 	padding: 40px 37px;
 	box-shadow: 0 4px 13px 0 rgb(28 30 30 / 18%);
+
 }
 
 .pricing-item-title {

@@ -11,8 +11,8 @@
 }
 
 :root {
-    --red: #d62324;
-    --white: #FFFFFF;
-    --black: #0a0c0d;
-    --biege: rgb(241, 237, 225)
+    --primary-color: #d62324;
+    --inverse-color: #FFFFFF;
+    --dark-color: #0a0c0d;
+    --bg-color: rgb(241, 237, 225)
 }
