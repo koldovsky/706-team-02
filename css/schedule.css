@@ -1,11 +1,11 @@
 section.schedule {
     text-align: center;
     padding: 100px 0;
-    background-color: var(--biege);
+    background-color: var(--background-color);
 }
 
 h2.schedule__h2 {
-    color: var(--red);
+    color: var(--brand-color);
     font-size: 26px;
     line-height: 1.43;
     font-family: 'Homemade Apple', cursive;
@@ -21,7 +21,7 @@ aside.schedule__title {
 }
 
 .schedule__title-divider {
-    border-bottom: 2px solid var(--red);
+    border-bottom: 2px solid var(--brand-color);
     width: 50px;
     margin: -3px 48%;
 }
@@ -51,7 +51,7 @@ table.schedule__table {
 }
 
 tr.schedule__table-cols {
-    background: var(--red);
+    background: var(--brand-color);
 }
 
 td {
@@ -72,7 +72,7 @@ td {
 }
 
 tr th {
-    color: var(--white);
+    color: var(--subtitle-text-color1);
     font-size: 24px;
     line-height: 1.4;
     font-family: 'Rajdhani', sans-serif;
