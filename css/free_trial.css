@@ -1,0 +1,51 @@
+.freetrial__title {
+	text-align: center;
+	font-family: 'Homemade Apple';
+	font-size: 1.625rem;
+}
+
+.freetrial__subtitle {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3.5rem;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.freetrial__inner {
+	width: 50%;
+  	display: inline-block;
+}
+
+.freetrial__button {
+	display: block;
+	width: 170px;
+	height: 60px;
+	background: #1A1A1A;
+	color: #fff;
+	text-decoration: none;
+}
+
+.freetrial__button:hover {
+	color: #fff;
+    background: #333;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear; 
+}
+
+.freetrial__button p {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.freetrial {
+	background-image: url(img_css/free_trials_bg.webp);
+	height: 500px;
+	width: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
