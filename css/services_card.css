@@ -6,6 +6,13 @@
 .card__title {
     text-transform: uppercase;
     margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3.5rem;
+}
+
+.card__subtitle {
+    font-family: 'Caption', sans-serif;
+    font-size: 0.875rem;
 }
 
 .divider {
@@ -13,8 +20,6 @@
     width: 50px;
     margin: 15px 0px;
 }
-
-.card__subtitle {}
 
 .services__card {
     background-repeat: no-repeat;
@@ -42,8 +47,9 @@
 
 .card__button-text {
     text-transform: uppercase;
-    font-size: 12px;
-    text-align: center
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .card__inner a {
