@@ -1,0 +1,9 @@
+.main__advantage {
+    display: flex;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    height: 400px;
+}
+.advantage__program {
+    background-color: rgb(214, 35, 36);
+}
