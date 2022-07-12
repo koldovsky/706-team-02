@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
 
 * {
@@ -11,8 +10,8 @@
 }
 
 :root {
-    --primary-color: #d62324;
-    --inverse-color: #FFFFFF;
-    --dark-color: #0a0c0d;
-    --bg-color: rgb(241, 237, 225)
+    --brand-color: #d62324;
+    --subtitle-text-color1: #FFFFFF;
+    --subtitle-text-color2: #0a0c0d;
+    --background-color: rgb(241, 237, 225);
 }

@@ -1,5 +1,5 @@
 .pricing {
-	background-color: var(--biege);
+	background-color: var(--background-color);
 }
 
 .pricing-content {
@@ -11,7 +11,7 @@
 	font-family: 'Homemade Apple';
 	font-weight: 400;
 	font-size: 20px;
-	color: var(--red);
+	color: var(--brand-color);
 	text-align: center;
 	letter-spacing: 1px;
 }
@@ -29,7 +29,7 @@
 	content: '';
 	width: 50px;
 	height: 2px;
-	background-color: var(--red);
+	background-color: var(--brand-color);
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -48,7 +48,7 @@
 }
 
 .pricing-item {
-	background: var(--white);
+	background: var(--subtitle-text-color1);
 	padding: 40px 37px;
 	box-shadow: 0 4px 13px 0 rgb(28 30 30 / 18%);
 
@@ -63,7 +63,7 @@
 .pricing-item-price {
 	font-family: Rajdhani;
 	font-size: 47px;
-	color: var(--red);
+	color: var(--brand-color);
 	position: relative;
 }
 
@@ -71,7 +71,7 @@
 	content: '';
 	width: 50px;
 	height: 2px;
-	background-color: var(--red);
+	background-color: var(--brand-color);
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -99,7 +99,7 @@
 }
 
 .pricing-button {
-	background-color: var(--red);
+	background-color: var(--brand-color);
 	color: #ffff;
 	border: none;
 	margin: 10px;
