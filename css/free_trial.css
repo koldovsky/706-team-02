@@ -1,0 +1,41 @@
+.freetrial__subtitle {
+	text-transform: uppercase;
+}
+
+.main__freetrials {
+	width: 50%;
+  	display: inline-block;
+  	background: #ccc;
+}
+
+.freetrial__button {
+	display: block;
+	width: 170px;
+	height: 60px;
+	background: #1A1A1A;
+	color: #fff;
+	text-decoration: none;
+}
+
+.freetrial__button:hover {
+	color: #fff;
+    background: #333;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear; 
+}
+
+.freetrial__button p {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.freetrials {
+	background-image: url(img_css/free_trials_bg.webp);
+	height: 500px;
+	width: 100%;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
