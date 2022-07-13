@@ -6,9 +6,9 @@
 @import url(pricing.css);
 @import url(services_card.css);
 @import url(free_trial.css);
+@import url(header.css);
 @import url(advantages.css);
-
-
+@import url(about-us.css);
 
 .blog__first-img {
     padding: 20px;
