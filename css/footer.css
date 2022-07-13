@@ -1,32 +1,40 @@
-/*footer css Yevhen starts*/
+/*footer css Yevhen*/
 .footer {
     background-color: #16120f;
     padding-top: 0;
     padding-bottom: 0;
-    /*display: inline-block;
-    max-height: 100%;*/
 }
 
-@media (min-width: 851px) {
+@media (min-width: 766px) {
     .footer__container {
-        border-bottom: 0.1em solid #323232;
         display: flex;
-        width: 1170px;
-        margin-right: 307px;
-        margin-left: 307px;
-        padding: 30px 0;
+        margin-left: 4%;
+        padding: 50px 0 25px 0;
+    }
+
+    .footer__sidebar {
+        padding-left: 16%;
     }
 
     .footer__sidebar-content .logo {
-        /*width: 126px; moved to html*/
         height: auto;
         margin: auto;
+        width: 130px;
     }
 
     .footer__row {
-        max-width: 67%;
-        width: calc(100% + 20px);
-        padding: 35px 0 0 563px;
+        padding: 35px 0 0 0;
+    }
+
+    nav.footer__menu {
+        position: absolute;
+        padding-left: 26%;
+    }
+
+    .footer__divider {
+        border-bottom: 0.1px solid #3e3d3d;
+        max-width: 1150px;
+        margin: 0 auto;
     }
 
     .sub__footer {
@@ -34,10 +42,7 @@
         padding-top: 15px;
         padding-bottom: 15px;
         display: flex;
-    }
-
-    .sub__footer_left-block {
-        padding-left: 307px;
+        padding-left: 20%;
     }
 
     .rights,
@@ -48,41 +53,31 @@
         line-height: 1.4;
         font-family: Roboto, sans-serif;
         font-weight: 400;
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 500px;
-    }
-
-    .rights {
-        margin-left: 300px;
-        display: contents;
+        margin: -5px 7px 8px -9px;
+        width: max-content;
     }
 
     .sub__footer_right-block {
-        /*width: 150px;*/
-        padding-left: 409px;
+        padding-left: 60%;
+        width: 100%;
     }
 
     .footer__menu a {
-        color: var(--subtitle-text-color1);
+        color: white;
         text-decoration: none;
         font-family: Roboto, sans-serif;
         font-weight: 550;
-        margin-left: 20px;
+        margin-left: 35px;
     }
 
     .footer__menu a:hover {
-        color: var(--brand-color);
-    }
-
-    nav.footer__menu {
-        position: absolute;
+        color: #d62324;
     }
 }
 
 /*footer mobile*/
 
-@media (max-width: 850px) {
+@media (max-width: 765px) {
     .footer {
         border-top: 0.1em solid #323232;
     }
@@ -93,6 +88,7 @@
 
     .footer__sidebar-content {
         padding-top: 20%;
+        padding-left: 11px;
     }
 
     .footer__row {
@@ -103,7 +99,7 @@
     }
 
     .footer__menu a {
-        color: var(--subtitle-text-color1);
+        color: white;
         text-decoration: none;
         font-family: Roboto, sans-serif;
         font-weight: 550;
@@ -111,9 +107,22 @@
         margin-bottom: 10px;
     }
 
+    nav.footer__menu {
+        text-align: center;
+        display: grid;
+        margin-left: 15px;
+    }
+
     .footer__container {
-        border-bottom: 0.1em solid #323232;
         margin: 0 24px;
+    }
+
+    .footer__divider {
+        border-bottom: 0.1px solid #3e3d3d;
+        position: relative;
+        width: 100%;
+        max-width: 1190px;
+        margin: 0 auto;
     }
 
     .rights,
@@ -133,4 +142,4 @@
     }
 }
 
-/*footer mobile end*/
+/*footer mobile end Yevhen*/
