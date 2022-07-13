@@ -9,18 +9,18 @@
 	text-align: center;
 	font-size: 3.5rem;
 	font-family: 'Rajdhani', sans-serif;
+	padding: 3%;
 }
 
 .freetrial__inner {
 	width: 50%;
-  	display: inline-block;
 }
 
 .freetrial__button {
 	display: block;
-	width: 170px;
-	height: 60px;
-	background: #1A1A1A;
+	width: 10.625rem;
+	height: 3.75rem;
+	background: var(--subtitle-text-color2);
 	color: #fff;
 	text-decoration: none;
 }
@@ -35,13 +35,14 @@
 
 .freetrial__button p {
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 1.25rem;
+	font-family: 'Rajdhani', sans-serif;
+	text-transform: uppercase;
 }
 
 .freetrial {
 	background-image: url(img_css/free_trials_bg.webp);
-	height: 500px;
+	height: 37rem;
 	width: 100%;
 	background-attachment: fixed;
 	background-size: cover;
