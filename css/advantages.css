@@ -13,12 +13,14 @@
     font-family: Rajdhani;
     font-size: 33px;
     color: var(--subtitle-text-color1);
+    padding-top: 10%;
     }
 .program__text-description {
     font-family: Roboto, sans-serif;
     color: var(--subtitle-text-color1);
     font-size: 16px;
     text-align: center;
+    padding-top: 12%;
     }
 .advantage__technique {
     background-color: #f1ede1
@@ -28,10 +30,12 @@
     font-family: Rajdhani;
     font-size: 33px;
     color: var(--brand-color);
+    padding-top: 10%;
     }
 .technique__text-description {
     font-family: Roboto, sans-serif;
     color: var(--subtitle-text-color2);
+    padding-top: 12%;
 }
 
 .advantage__success {
@@ -42,9 +46,11 @@
     font-family: Rajdhani;
     font-size: 33px;
     color: var(--subtitle-text-color1);
+    padding-top: 10%;
 }
 
 .advantage__text-description {
     font-family: Roboto, sans-serif;
     color: var(--subtitle-text-color1);
+    padding-top: 12%;
 }
