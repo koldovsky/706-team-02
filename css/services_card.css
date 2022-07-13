@@ -8,11 +8,13 @@
     margin: 0;
     font-family: 'Rajdhani', sans-serif;
     font-size: 3.5rem;
+    color: #ffffff;
 }
 
 .card__subtitle {
     font-family: 'Caption', sans-serif;
     font-size: 0.875rem;
+    color: #ffffff;
 }
 
 .divider {
@@ -50,6 +52,7 @@
     text-align: center;
     font-size: 0.875rem;
     font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
 }
 
 .card__inner a {
