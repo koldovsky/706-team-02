@@ -9,6 +9,7 @@
 @import url(header.css);
 @import url(advantages.css);
 @import url(about-us.css);
+@import url(training.css);
 
 .blog__first-img {
     padding: 20px;
