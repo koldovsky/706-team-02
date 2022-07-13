@@ -16,7 +16,7 @@
 }
 
 .divider {
-    border-bottom: 2px solid #f00;
+    border-bottom: 2px solid var(--brand-color);
     width: 50px;
     margin: 15px 0px;
 }
@@ -57,7 +57,7 @@
     display: block;
     width: 166px;
     padding: 10px 5px;
-    background: #f00;
+    background: var(--brand-color);
     color: #fff;
     text-decoration: none;
 }
