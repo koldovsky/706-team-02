@@ -1,9 +1,50 @@
 .main__advantage {
     display: flex;
     text-align: center;
-    font-family: 'Work Sans', sans-serif;
-    height: 400px;
-}
+    height: 436px;
+    }
+    
 .advantage__program {
-    background-color: rgb(214, 35, 36);
+    background-color: var(--brand-color);
+    }
+
+.program__text-header {
+    margin: 0%;
+    font-family: Rajdhani;
+    font-size: 33px;
+    color: var(--subtitle-text-color1);
+    }
+.program__text-description {
+    font-family: Roboto, sans-serif;
+    color: var(--subtitle-text-color1);
+    font-size: 16px;
+    text-align: center;
+    }
+.advantage__technique {
+    background-color: #f1ede1
+    }
+
+.technique__text-header {
+    font-family: Rajdhani;
+    font-size: 33px;
+    color: var(--brand-color);
+    }
+.technique__text-description {
+    font-family: Roboto, sans-serif;
+    color: var(--subtitle-text-color2);
+}
+
+.advantage__success {
+    background-color: rgb(30, 25, 23);
+}
+
+.advantage__text-header {
+    font-family: Rajdhani;
+    font-size: 33px;
+    color: var(--subtitle-text-color1);
+}
+
+.advantage__text-description {
+    font-family: Roboto, sans-serif;
+    color: var(--subtitle-text-color1);
 }
