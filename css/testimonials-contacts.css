@@ -1,12 +1,12 @@
 /* Testimonials CSS*/
 .testimonials {
-    background-color: rgb(241, 237, 225);
+    background-color: var(--background-color);
     width: 100%;
 
 }
 
 .testimonials__title {
-    color: var(--red);
+    color: var(--brand-color);
     font-family: 'homemade apple';
     font-size: 26px;
     margin: 0;
@@ -31,7 +31,7 @@
     height: 2px;
     display: block;
     position: relative;
-    background-color: var(--red);
+    background-color: var(--brand-color);
     bottom: 45%;
     left: 48%;
     margin-top: 20px;
@@ -68,7 +68,7 @@
 
 .slideshow-container__exponent-name {
     font-family: 'Rajdhani', sans-serif;
-    color: var(--red);
+    color: var(--brand-color);
     text-align: center;
 }
 
@@ -95,14 +95,14 @@
 .date__pub {
     letter-spacing: .1em;
     font-weight: bold;
-    color: var(--black);
+    color: var(--subtitle-text-color2);
 }
 
 .fa {
     text-decoration: none;
-    color: var(--black);
+    color: var(--subtitle-text-color2);
 }
 
 .fa:hover {
-    color: var(--red);
+    color: var(--brand-color);
 }
