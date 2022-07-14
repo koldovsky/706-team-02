@@ -50,15 +50,50 @@
 	margin-top: 20px;
 }
 
-.training-item-title{
-text-transform: uppercase;
-font-size: 36px;
-font-family: Rajdhani;
-color: #ffffff;
+.training-item-title {
+	text-transform: uppercase;
+	font-size: 36px;
+	font-family: Rajdhani;
+	color: #ffffff;
 }
 
-.training-class-price{
+.training-list {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	list-style: none;
+	margin-top: 60px;
+	overflow: hidden;
+}
+.training-list > li {
+	flex-basis: 33%;
+	padding: 0 15px;
+	flex-shrink: 0;
+}
 
+.training-class-price {
+	font-family: Rajdhani;
+	font-size: 24px;
+	color: var(--subtitle-text-color1);
+	position: relative;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.training-class-description {
+	font-family: Roboto;
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	letter-spacing: 1.4px;
+	line-height: 19.6px;
+	text-align: left;
+}
+
+.training-class {
+	padding-top: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .training-class.adults {
@@ -75,4 +110,23 @@ color: #ffffff;
 }
 .training-class.self-defence {
 	background-image: url('../img/training-self-defence.png');
+}
+
+.training-class-sign-up {
+	background-color: var(--brand-color);
+	color: var(--subtitle-text-color1);
+	border: none;
+	margin: 20px;
+	padding: 22px 52px;
+	box-shadow: 0 4px 14px 0 rgb(45 45 45 / 26%);
+	font-size: 12px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.training-class-sign-up :hover {
+	box-shadow: 0 4px 14px 0 rgb(45 45 45 / 26%);
+	background-color: rgb(255, 255, 255);
+	transition: color 0.2s ease-in, background-color 0.2s ease-in, border-color 0.2s ease-in, box-shadow 0.2s ease-in,
+		-webkit-box-shadow 0.2s ease-in;
 }
