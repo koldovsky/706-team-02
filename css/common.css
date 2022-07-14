@@ -14,4 +14,10 @@
     --subtitle-text-color1: #FFFFFF;
     --subtitle-text-color2: #0a0c0d;
     --background-color: rgb(241, 237, 225);
+    --divider-color: #d62324;
+    --background-button-color:#d62324;
+    --background-color-form: rgb(30, 25, 23);
+    --paragraph-text-color: rgb(112, 112, 112);
+    --background-color-dark: rgb(22, 18, 15);
+    --border-color: #d62324;
 }
