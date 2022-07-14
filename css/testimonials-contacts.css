@@ -17,7 +17,7 @@
 }
 
 .testimonials__subtitle {
-    color: #16120f;
+    color: var(--subtitle-text-color2);
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     text-align: center;
@@ -31,7 +31,7 @@
     height: 2px;
     display: block;
     position: relative;
-    background-color: var(--brand-color);
+    background-color: var(--divider-color);
     bottom: 45%;
     left: 48%;
     margin-top: 20px;
@@ -75,7 +75,7 @@
 
 .slideshow-container__exponent-feedback {
     letter-spacing: .05em;
-    color: #707070;
+    color: var(--paragraph-text-color);
     text-transform: none;
 }
 
@@ -86,7 +86,7 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #d55959;
+    background-color: var(--carousel-indicators-color);
     border-radius: 50%;
     display: inline-block;
     transition: 0.6s ease;
@@ -111,7 +111,7 @@
 
 @media (max-width:767px) {
     .contacts {
-        background-color: rgb(22, 18, 15);
+        background-color: var(--background-color-dark);
         display: block;
         position: relative;
         flex-basis: 100%;
@@ -183,7 +183,7 @@
         width: 50px;
         height: 2px;
         position: absolute;
-        background-color: var(--brand-color);
+        background-color: var(--divider-color);
         bottom: 0;
         justify-content: flex-start;
         left: 0;
@@ -262,7 +262,7 @@
         padding: 39px 55px;
         overflow-x: hidden;
         overflow-y: hidden;
-        background-color: rgb(30, 25, 23);
+        background-color: var(--background-color-form);
     }
 
     .inner__background {
@@ -286,8 +286,8 @@
         border-style: solid;
         border-width: 2px;
         border-color: rgba(241, 237, 225, 0.11);
-        background-color: rgb(30, 25, 23);
-        color: #FFFFFF8A;
+        background-color: var(--background-form-color);
+        color: var(--input-text-color);
         font-size: 12px;
         font-family: 'Roboto';
         margin-top: 12px;
@@ -302,13 +302,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: rgba(255, 255, 255, 0.54);
+        color: var(--input-text-color);
     }
 
     .form__button {
         display: flex;
         justify-content: center;
-        background-color: var(--brand-color);
+        background-color: var(--background-button-color);
         color: var(--subtitle-text-color1);
         font-size: 12px;
         font-family: 'Roboto';
@@ -324,12 +324,12 @@
     .form__img-calendar {
         height: 19px;
         width: 23px;
-        color: var(--white);
+        color: var(--subtitle-text-color1);
     }
 
     .form__button:hover {
-        background-color: var(--white);
-        color: var(--black);
+        background-color: var(--subtitle-text-color1);
+        color: var(--subtitle-text-color2);
         cursor: pointer;
     }
 
@@ -350,7 +350,7 @@
 
     .contacts {
         padding: 100px 0 40px;
-        background-color: rgb(22, 18, 15);
+        background-color: var(--background-color-dark);
         display: block;
         position: relative;
         flex-basis: 100%;
@@ -385,7 +385,7 @@
         width: 50px;
         height: 2px;
         position: absolute;
-        background-color: var(--brand-color);
+        background-color: var(--divider-color);
         bottom: 0;
         justify-content: flex-start;
         left: 0;
@@ -496,7 +496,7 @@
         margin-top: 30px;
         display: flex;
         flex-basis: 50%;
-        background-color: rgb(30, 25, 23);
+        background-color: var(--background-form-color);
     }
 
 
@@ -531,9 +531,9 @@
         display: block;
         border-style: solid;
         border-width: 2px;
-        border-color: rgba(241, 237, 225, 0.11);
-        background-color: rgb(30, 25, 23);
-        color: #FFFFFF8A;
+        border-color: var(--input-border-color);
+        background-color: var(--background-form-color);
+        color: var(--input-text-color);
         font-size: 12px;
         font-family: 'Roboto';
         margin-top: 12px;
@@ -548,14 +548,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: rgba(255, 255, 255, 0.54);
+        color: var(--input-text-color);
     }
 
     .form__button {
         display: inline-block;
         position: absolute;
-        background-color: var(--red);
-        color: var(--white);
+        background-color: var(--background-button-color);
+        color: var(--subtitle-text-color1);
         font-size: 12px;
         font-family: 'Roboto';
         border: 2px transparent solid;
@@ -570,12 +570,12 @@
     .form__img-calendar {
         height: 19px;
         width: 23px;
-        color: var(--white);
+        color: var(--subtitle-text-color1);
     }
 
     .form__button:hover {
-        background-color: var(--white);
-        color: var(--black);
+        background-color: var(--subtitle-text-color1);
+        color: var(--subtitle-text-color2);
         cursor: pointer;
     }
 
