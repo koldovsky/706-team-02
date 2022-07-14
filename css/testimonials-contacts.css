@@ -262,7 +262,7 @@
         padding: 39px 55px;
         overflow-x: hidden;
         overflow-y: hidden;
-        background-color: var(--background-color-form);
+        background-color: var(--background-form-color);
     }
 
     .inner__background {
@@ -285,7 +285,7 @@
         display: block;
         border-style: solid;
         border-width: 2px;
-        border-color: rgba(241, 237, 225, 0.11);
+        border-color: var(--input-border-color);
         background-color: var(--background-form-color);
         color: var(--input-text-color);
         font-size: 12px;
