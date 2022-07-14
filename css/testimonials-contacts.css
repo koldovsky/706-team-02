@@ -108,236 +108,477 @@
 }
 
 /* contacts css*/
-.contacts {
-    padding: 100px 0 40px;
-    background-color: #16120f;
-    display: block;
-    position: relative;
-    flex-basis: 100%;
-    width: 100%;
+
+@media (max-width:767px) {
+    .contacts {
+        background-color: rgb(22, 18, 15);
+        display: block;
+        position: relative;
+        flex-basis: 100%;
+        min-width: 320px;
+        padding: 90px 0 40px;
+    }
+
+    .contacts__container {
+        padding: 0 24px;
+        display: block;
+        max-width: 1200px;
+    }
+
+    .contacts__container-inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -50px -15px 0;
+    }
+
+    .contacts__details {
+        padding: 0 15px;
+        margin-top: 50px;
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+
+    .details__inner {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .contacts__title {
+        font-size: 14px;
+    }
+
+    .contacts__title {
+        color: var(--brand-color);
+        font-family: 'homemade apple';
+        font-size: 26px;
+        margin: 0;
+        text-align: left;
+        letter-spacing: 1.3px;
+        font-weight: 400;
+    }
+
+    .contacts__subtitle {
+        display: block;
+        position: relative;
+        color: var(--subtitle-text-color1);
+        font-family: 'Rajdhani';
+        font-size: 38px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .contacts__subtitle::after {
+        content: "";
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        background-color: var(--brand-color);
+        bottom: 0;
+        justify-content: flex-start;
+        left: 0;
+    }
+
+    p.contacts__introduction-phrase {
+        font-family: 'Roboto' sans-serif;
+        font-size: 18px;
+        text-align: left;
+        color: var(--subtitle-text-color1);
+        margin-top: 15px;
+        max-width: 100%;
+    }
+
+    .contacts__address__details {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        color: var(--subtitle-text-color1);
+    }
+
+    .address-details__inner-address {
+        margin-bottom: 16px;
+    }
+
+    .contacts__text-address {
+        font-family: 'Rajdhani';
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    address {
+        font-family: 'Roboto';
+        font-size: 16px;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .contacts__text-contact {
+        font-family: 'Rajdhani';
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .contacts__link {
+        color: var(--subtitle-text-color1);
+        font-family: 'Roboto';
+        font-size: 16px;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .contacts__map {
+        display: block;
+        position: relative;
+        height: 255px;
+        max-width: 719px;
+        margin-top: 30px;
+        cursor: grabbing;
+    }
+
+    .contacts__form {
+        display: flex;
+        flex-basis: 100%;
+        margin-top: 50px;
+        padding: 0 15 0 0;
+        min-width: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+
+    .form__inner {
+        display: flex;
+        flex-basis: 100%;
+        padding: 39px 55px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: rgb(30, 25, 23);
+    }
+
+    .inner__background {
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        position: relative;
+    }
+
+    .form__user-name,
+    .form__user-number,
+    .form__user-email,
+    .form__date-picker {
+        display: block;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(241, 237, 225, 0.11);
+        background-color: rgb(30, 25, 23);
+        color: #FFFFFF8A;
+        font-size: 12px;
+        font-family: 'Roboto';
+        margin-top: 12px;
+        padding: 20px 50px;
+        width: 100%;
+        line-height: 15px;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .form__date-picker {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.54);
+    }
+
+    .form__button {
+        display: flex;
+        justify-content: center;
+        background-color: var(--brand-color);
+        color: var(--subtitle-text-color1);
+        font-size: 12px;
+        font-family: 'Roboto';
+        border: 2px transparent solid;
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px 50px;
+        width: 100%;
+        height: 70px;
+        font-weight: 500;
+    }
+
+    .form__img-calendar {
+        height: 19px;
+        width: 23px;
+        color: var(--white);
+    }
+
+    .form__button:hover {
+        background-color: var(--white);
+        color: var(--black);
+        cursor: pointer;
+    }
+
 
 }
 
-.contacts__container {
-    padding: 0 15px;
-    display: block;
-    min-width: 600px;
-    margin: 0 32px;
+
+
+@media (min-width:767px) {
+    .contacts__details {
+        padding: 0 15px;
+        margin-top: 30px;
+        display: flex;
+        flex-basis: 50%;
+        max-width: 50%;
+
+    }
+
+    .contacts {
+        padding: 100px 0 40px;
+        background-color: rgb(22, 18, 15);
+        display: block;
+        position: relative;
+        flex-basis: 100%;
+        min-width: 320px;
+        padding: 90px 0 40px;
+
+    }
+
+    .contacts__title {
+        color: var(--brand-color);
+        font-family: 'homemade apple';
+        font-size: 26px;
+        margin: 0;
+        text-align: left;
+        letter-spacing: 1.3px;
+        font-weight: 400;
+    }
+
+    .contacts__subtitle {
+        display: block;
+        position: relative;
+        color: var(--subtitle-text-color1);
+        font-family: 'Rajdhani';
+        font-size: 56px;
+        font-weight: 700;
+        text-align: left;
+
+    }
+
+    .contacts__subtitle::after {
+        content: "";
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        background-color: var(--brand-color);
+        bottom: 0;
+        justify-content: flex-start;
+        left: 0;
+    }
+
+    /* here*/
+    p.contacts__introduction-phrase {
+        font-family: 'Roboto';
+        font-size: 18px;
+        text-align: left;
+        color: var(--subtitle-text-color1);
+        margin-top: 15px;
+        max-width: 100%;
+    }
+
+    .contacts__container {
+        padding: 0 24px;
+        display: block;
+        max-width: 1200px;
+    }
+
+    .contacts__container-inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -50px -15px 0;
+    }
+
+
+
+
+    .contacts__details {
+        padding: 0 15px;
+        margin-top: 50px;
+        display: flex;
+        flex-basis: 100%;
+
+    }
+
+    .details__inner {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        width: 570px;
+        max-width: 100%;
+    }
+
+
+    .contacts__address__details {
+        color: var(--subtitle-text-color1);
+        font-family: 'Radjhani';
+        font-size: 23px;
+        margin: 0 0 5px;
+        padding: 8px 23px 8px 0;
+    }
+
+    .contacts__text-contact {
+        color: var(--subtitle-text-color1);
+        font-family: 'Radjhani';
+        font-size: 23px;
+        margin: 0 0 5px;
+        padding: 8px 15px 0 0;
+    }
+
+    a .contacts__link {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    a {
+        color: var(--subtitle-text-color1);
+    }
+
+    .contacts__link {
+        padding: 8px 0 0 15px;
+    }
+
+    .contacts__address {
+        color: var(--subtitle-text-color1);
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    address {
+        padding: 8px 0 8px 15px;
+    }
+
+
+    .contacts__map {
+        display: block;
+        position: relative;
+        height: 255px;
+        max-width: 719px;
+        margin-top: 20px;
+        cursor: grabbing;
+    }
+
+    .contacts__form {
+        padding: 0 15px;
+        margin-top: 30px;
+        display: flex;
+        flex-basis: 50%;
+        background-color: rgb(30, 25, 23);
+    }
+
+
+    .form__inner {
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        margin: 0;
+        max-width: 100%;
+        min-width: 0px;
+        padding: 60px 100px;
+        position: relative;
+        flex-basis: 100%;
+    }
+
+    .inner__background {
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    .form {
+        display: block;
+        position: relative;
+        width: 100%;
+        line-height: 24px;
+    }
+
+    .form__user-name,
+    .form__user-number,
+    .form__user-email,
+    .form__date-picker {
+        display: block;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(241, 237, 225, 0.11);
+        background-color: rgb(30, 25, 23);
+        color: #FFFFFF8A;
+        font-size: 12px;
+        font-family: 'Roboto';
+        margin-top: 12px;
+        padding: 20px 50px;
+        width: 100%;
+        line-height: 15px;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .form__date-picker {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.54);
+    }
+
+    .form__button {
+        display: inline-block;
+        position: absolute;
+        background-color: var(--red);
+        color: var(--white);
+        font-size: 12px;
+        font-family: 'Roboto';
+        border: 2px transparent solid;
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px 50px;
+        width: 100%;
+        height: 70px;
+        font-weight: 500;
+    }
+
+    .form__img-calendar {
+        height: 19px;
+        width: 23px;
+        color: var(--white);
+    }
+
+    .form__button:hover {
+        background-color: var(--white);
+        color: var(--black);
+        cursor: pointer;
+    }
+
+
 }
 
-.contacts__container {
-    display: block;
-}
-
-.contacts__container-inner {
-    display: flex;
-    justify-content: center;
-}
-
-.contacts__content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -30px -15px 0;
-}
-
-
-
-.contacts__details {
-    padding: 0 15px;
-    margin-top: 30px;
-    display: flex;
-    flex-basis: 50%;
-    max-width: 50%;
-    width: 600px;
-}
-
-.details__inner {
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-    width: 570px;
-    max-width: 100%;
-}
-
-.contacts__title {
-    color: var(--brand-color);
-    font-family: 'homemade apple';
-    font-size: 26px;
-    margin: 0;
-    text-align: left;
-    letter-spacing: 1.3px;
-    font-weight: 400;
-}
-
-.contacts__subtitle {
-    display: block;
-    position: relative;
-    color: var(--subtitle-text-color1);
-    font-family: 'Rajdhani';
-    font-size: 56px;
-    font-weight: 700;
-    text-align: left;
-
-}
-
-.contacts__subtitle::after {
-    content: "";
-    width: 50px;
-    height: 2px;
-    position: absolute;
-    background-color: var(--brand-color);
-    bottom: 0;
-    justify-content: flex-start;
-    left: 0;
-}
-
-p.contacts__introduction-phrase {
-    font-family: 'Roboto';
-    font-size: 18px;
-    text-align: left;
-    color: var(--subtitle-text-color1);
-    padding: 25px 0;
-}
-
-.contacts__address__details {
-    color: var(--subtitle-text-color1);
-    font-family: 'Radjhani';
-    font-size: 23px;
-    margin: 0 0 5px;
-    padding: 8px 23px 8px 0;
-}
-
-.contacts__text-contact {
-    color: var(--subtitle-text-color1);
-    font-family: 'Radjhani';
-    font-size: 23px;
-    margin: 0 0 5px;
-    padding: 8px 15px 0 0;
-}
-
-a .contacts__link {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: row;
-
-}
-
-a {
-    color: var(--subtitle-text-color1);
-}
-
-.contacts__link {
-    padding: 8px 0 0 15px;
-}
-
-.contacts__address {
-    color: var(--subtitle-text-color1);
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-address {
-    padding: 8px 0 8px 15px;
-}
-
-
-.contacts__map {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 255px;
-    width: 100%;
-    margin-top: 20px;
-    cursor: grabbing;
-    overflow: hidden;
-}
-
-.contacts__form {
-    padding: 0 15px;
-    margin-top: 30px;
-    display: flex;
-    flex-basis: 50%;
-    background-color: rgb(30, 25, 23);
-}
-
-
-.form__inner {
-    display: flex;
-    position: relative;
-    justify-content: flex-start;
-    margin: 0;
-    max-width: 100%;
-    min-width: 0px;
-    padding: 60px 100px;
-    position: relative;
-    flex-basis: 100%;
-}
-
-.inner__background {
-    display: flex;
-    flex-basis: 100%;
-}
-
-.form {
-    display: block;
-    position: relative;
-    width: 100%;
-    line-height: 24px;
-}
-
-.form__user-name,
-.form__user-number,
-.form__user-email,
-.form__date-picker {
-    display: block;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(241, 237, 225, 0.11);
-    background-color: rgb(30, 25, 23);
-    color: #FFFFFF8A;
-    font-size: 12px;
-    font-family: 'Roboto';
-    margin-top: 12px;
-    padding: 20px 50px;
-    width: 100%;
-    line-height: 15px;
-    text-align: left;
-    font-weight: 400;
-}
-
-.form__date-picker {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.54);
-}
-
-.form__button {
-    display: inline-block;
-    position: absolute;
-    background-color: var(--red);
-    color: var(--white);
-    font-size: 12px;
-    font-family: 'Roboto';
-    border: 2px transparent solid;
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px 50px;
-    width: 100%;
-    height: 70px;
-    font-weight: 500;
-}
-
-.form__img-calendar {
-    height: 19px;
-    width: 23px;
-    color: var(--white);
-}
-
-.form__button:hover {
-    background-color: var(--white);
-    color: var(--black);
-    cursor: pointer;
-}
