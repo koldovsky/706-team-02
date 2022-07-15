@@ -1,6 +1,6 @@
 /*footer css Yevhen*/
 .footer {
-    background-color: #16120f;
+    background-color: var(--background-color-dark);
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -38,7 +38,7 @@
     }
 
     .sub__footer {
-        background-color: #16120f;
+        background-color: var(--background-color-dark);
         padding-top: 15px;
         padding-bottom: 15px;
         display: flex;
@@ -63,7 +63,7 @@
     }
 
     .footer__menu a {
-        color: white;
+        color: var(--subtitle-text-color1);
         text-decoration: none;
         font-family: Roboto, sans-serif;
         font-weight: 550;
@@ -71,7 +71,7 @@
     }
 
     .footer__menu a:hover {
-        color: #d62324;
+        color: var(--brand-color);
     }
 }
 
@@ -99,7 +99,7 @@
     }
 
     .footer__menu a {
-        color: white;
+        color: var(--subtitle-text-color1);
         text-decoration: none;
         font-family: Roboto, sans-serif;
         font-weight: 550;
