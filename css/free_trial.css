@@ -2,7 +2,7 @@
 	text-align: center;
 	font-family: 'Homemade Apple';
 	font-size: 1.625rem;
-	color: #ffffff;
+	color: var(--subtitle-text-color1);
 }
 
 .freetrial__subtitle {
@@ -11,7 +11,7 @@
 	font-size: 3.5rem;
 	font-family: 'Rajdhani', sans-serif;
 	padding: 3%;
-	color: #ffffff;
+	color: var(--subtitle-text-color1);
 }
 
 .freetrial__inner {
@@ -23,12 +23,12 @@
 	width: 10.625rem;
 	height: 3.75rem;
 	background: var(--subtitle-text-color2);
-	color: #fff;
+	color: var(--subtitle-text-color1);
 	text-decoration: none;
 }
 
 .freetrial__button:hover {
-	color: #fff;
+	color: var(--subtitle-text-color1);
     background: #333;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
