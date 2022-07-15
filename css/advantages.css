@@ -1,11 +1,12 @@
 .main__advantage {
     display: flex;
     text-align: center;
-    height: 436px;
     }
     
 .advantage__program {
+    background-image: url(img_css/advantage_program_bg.webp);
     background-color: var(--brand-color);
+	background-size: cover;
     }
 
 .program__text-header {
@@ -23,7 +24,9 @@
     padding-top: 12%;
     }
 .advantage__technique {
-    background-color: #f1ede1
+    background-image: url(img_css/advantage_technique_bg.png);
+    background-size: cover;
+    background-color: var(--background-color);
     }
 
 .technique__text-header {
@@ -39,7 +42,9 @@
 }
 
 .advantage__success {
-    background-color: rgb(30, 25, 23);
+    background-image: url(img_css/advantage_success.png);
+    background-size: cover;
+    background-color: var(--background-color-dark);
 }
 
 .advantage__text-header {
