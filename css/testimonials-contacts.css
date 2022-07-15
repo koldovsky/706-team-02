@@ -215,7 +215,7 @@
         margin-bottom: 5px;
     }
 
-    address {
+    .address {
         font-family: 'Roboto';
         font-size: 16px;
         max-width: 100%;
@@ -339,34 +339,57 @@
 
 
 @media (min-width:767px) {
+    .contacts {
+        padding: 95px 0 40px;
+        background-color: var(--background-color-dark);
+        display: block;
+        position: relative;
+        flex-basis: 100%;
+        min-width: 320px;
+    }
+
+    .contacts__container {
+        padding: 0 32px;
+        max-width: 1200px;
+        display: block;
+    }
+
+    .contacts__container-inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -30px -15px 0;
+    }
+
+
     .contacts__details {
         padding: 0 15px;
         margin-top: 30px;
         display: flex;
         flex-basis: 50%;
         max-width: 50%;
-
     }
 
-    .contacts {
-        padding: 100px 0 40px;
-        background-color: var(--background-color-dark);
-        display: block;
-        position: relative;
+    .details__inner {
+        display: flex;
         flex-basis: 100%;
-        min-width: 320px;
-        padding: 90px 0 40px;
-
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 100%;
     }
 
     .contacts__title {
         color: var(--brand-color);
         font-family: 'homemade apple';
-        font-size: 26px;
-        margin: 0;
+        font-size: 20px;
         text-align: left;
-        letter-spacing: 1.3px;
+        letter-spacing: 1px;
         font-weight: 400;
+        line-height: 28.6px;
     }
 
     .contacts__subtitle {
@@ -374,9 +397,12 @@
         position: relative;
         color: var(--subtitle-text-color1);
         font-family: 'Rajdhani';
-        font-size: 56px;
+        font-size: 47px;
         font-weight: 700;
         text-align: left;
+        margin-top: 20px;
+        line-height: 56.4px;
+        padding-bottom: 15px;
 
     }
 
@@ -389,9 +415,10 @@
         bottom: 0;
         justify-content: flex-start;
         left: 0;
+        right: 321px;
+
     }
 
-    /* here*/
     p.contacts__introduction-phrase {
         font-family: 'Roboto';
         font-size: 18px;
@@ -401,93 +428,73 @@
         max-width: 100%;
     }
 
-    .contacts__container {
-        padding: 0 24px;
-        display: block;
-        max-width: 1200px;
-    }
-
-    .contacts__container-inner {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contacts__content {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -50px -15px 0;
-    }
-
-
-
-
-    .contacts__details {
-        padding: 0 15px;
-        margin-top: 50px;
-        display: flex;
-        flex-basis: 100%;
-
-    }
-
-    .details__inner {
-        display: flex;
-        flex-basis: 100%;
-        flex-direction: column;
-        width: 570px;
-        max-width: 100%;
-    }
-
-
     .contacts__address__details {
+        margin-top: 25px;
+        display: table;
+        flex-direction: column;
         color: var(--subtitle-text-color1);
-        font-family: 'Radjhani';
+    }
+
+    .address-details__inner-address {
+        margin-bottom: 16px;
+    }
+
+    .contacts__text-address {
+        font-family: 'Rajdhani';
+        display: table-cell;
         font-size: 23px;
-        margin: 0 0 5px;
-        padding: 8px 23px 8px 0;
+        margin-bottom: 5px;
+        padding: 8px 15px 8px 0;
+        font-weight: 700;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    .address {
+        font-family: 'Roboto';
+        display: table-cell;
+        font-size: 16px;
+        max-width: 100%;
+        text-align: left;
+        padding: 8px 0 8px 15px;
+        line-height: 24px;
     }
 
     .contacts__text-contact {
-        color: var(--subtitle-text-color1);
-        font-family: 'Radjhani';
+        font-family: 'Rajdhani';
+        display: table-cell;
+        margin-bottom: 5px;
         font-size: 23px;
-        margin: 0 0 5px;
         padding: 8px 15px 0 0;
+        font-weight: 700;
+        max-width: 100%;
+        vertical-align: middle;
     }
 
-    a .contacts__link {
-        font-family: 'Roboto', sans-serif;
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    a {
+    .contacts__links {
         color: var(--subtitle-text-color1);
+        font-family: 'Roboto';
+        display: table-cell;
+        font-size: 16px;
+        max-width: 100%;
+        padding: 8px 0 8px 15px;
+        line-height: 24px;
     }
 
     .contacts__link {
-        padding: 8px 0 0 15px;
-    }
-
-    .contacts__address {
         color: var(--subtitle-text-color1);
-        font-family: 'Roboto', sans-serif;
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
+        font-family: 'Roboto';
+        font-size: 16px;
+        max-width: 100%;
+        text-align: left;
     }
-
-    address {
-        padding: 8px 0 8px 15px;
-    }
-
 
     .contacts__map {
         display: block;
         position: relative;
         height: 255px;
         max-width: 719px;
-        margin-top: 20px;
+        margin-top: 30px;
         cursor: grabbing;
     }
 
@@ -581,4 +588,3 @@
 
 
 }
-
