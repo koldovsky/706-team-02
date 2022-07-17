@@ -1,3 +1,126 @@
 .main__about-us {
     background-color: var(--subtitle-text-color1);
+    display: flex;
+    
+}
+
+.main__about-us_photo {
+    box-sizing: border-box;
+
+}
+
+.about-us__photo {
+    border-radius: inherit;
+    height: 497px;
+    width: 421px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    line-height: 24px;
+    margin: auto;
+    border-radius: inherit;
+
+}
+
+.main__about-us-inner {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    margin-top: 30px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: stretch;
+    
+
+}
+
+.about-us__title {
+    font-family: "Homemade Apple", undefined;
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+    color: var(--brand-color);
+    display: block;
+    justify-content: center;
+}
+
+.about-us__subtitle {
+    font-family: Rajdhani, sans-serif;
+    font-size: 47px;
+    color: var(--subtitle-text-color2);
+    text-align: left;
+    display: block;
+}
+
+.about-us__information {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #707070;
+    text-align: left;
+    display: block;
+
+}
+
+.about-us__media-content_one {
+    display: flex; 
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.about-us__container_one_photo {
+    font-size: 16px;
+    height: 70px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 70px;
+    margin: auto;
+
+
+}
+.about-us__container_one_title {
+    color: var(--subtitle-text-color2);
+    font-family: Rajdhani, sans-serif;
+    box-sizing: border-box;
+    color: #16120f;
+    font-size: 23px;
+    display: inline;
+    text-align: left;
+}
+
+.about-us__container_one_subtitle {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #707070;
+    text-align: left;
+}
+
+.about-us__container_two_photo {
+    font-size: 16px;
+    font-weight: 400;
+    height: 70px;
+    line-height: 24px;
+    margin: auto;
+
+}
+
+.about-us__container_two_title {
+    color: var(--subtitle-text-color2);
+    font-family: Rajdhani, sans-serif;
+    box-sizing: border-box;
+    color: #16120f;
+    font-size: 23px;
+    display: inline;
+    text-align: left;
+}
+
+.about-us__container_two_subtitle {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #707070;
+    text-align: left;
 }
