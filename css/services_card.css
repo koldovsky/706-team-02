@@ -1,6 +1,8 @@
 /*Block-2*/
 .main__services {
     display: flex;
+    max-width: 99%;
+    margin: auto;
 }
 
 .card__title {
@@ -8,17 +10,17 @@
     margin: 0;
     font-family: 'Rajdhani', sans-serif;
     font-size: 3.5rem;
-    color: #ffffff;
+    color: var(--subtitle-text-color1);
 }
 
 .card__subtitle {
     font-family: 'Caption', sans-serif;
     font-size: 0.875rem;
-    color: #ffffff;
+    color: var(--subtitle-text-color1);
 }
 
 .divider {
-    border-bottom: 2px solid var(--brand-color);
+    border-bottom: 2px solid var(--divider-color);
     width: 50px;
     margin: 15px 0px;
 }
@@ -32,18 +34,15 @@
     margin: 10px;
 }
 
-.man {
-    /*multiclass services__card*/
+.services__card-man {
     background-image: url(img_css/boxing_human_card.png);
 }
 
-.child {
-    /*multiclass services__card*/
+.services__card-child {
     background-image: url(img_css/boxing_child_card.png);
 }
 
-.woman {
-    /*multiclass services__card*/
+.services__card-woman {
     background-image: url(img_css/boxing_woman_card.png);
 }
 
@@ -52,7 +51,7 @@
     text-align: center;
     font-size: 0.875rem;
     font-family: 'Rajdhani', sans-serif;
-    color: #ffffff;
+    color: var(--subtitle-text-color1);
 }
 
 .card__inner a {
@@ -60,15 +59,38 @@
     display: block;
     width: 166px;
     padding: 10px 5px;
-    background: var(--brand-color);
-    color: #fff;
+    background: var(--background-button-color);
+    color: var(--subtitle-text-color1);
     text-decoration: none;
 }
 
 .card__inner a:hover {
-    color: #fff;
+    color: var(--subtitle-text-color1);
     background: #333;
     transition: all 0.3s linear;
     --webkit-transition: all 0.3s linear;
     --moz-transition: all 0.3s linear;
+}
+
+@media (max-width: 825px) {
+    .main__services {
+        display: block;
+    }
+    .man {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .child {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .woman {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }

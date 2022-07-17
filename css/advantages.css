@@ -1,56 +1,90 @@
 .main__advantage {
     display: flex;
+    height: 400px;
     text-align: center;
-    height: 436px;
     }
     
 .advantage__program {
+    background-image: url(img_css/advantage_program_bg.webp);
     background-color: var(--brand-color);
+	background-size: cover;
+    background-position-x: 100%, 0%;
+    background-position-y: 78.62%, 0%;
     }
 
+.program__icon {
+    margin-top: 15%;
+}
+
 .program__text-header {
-    margin: 0%;
     font-family: Rajdhani;
     font-size: 33px;
     color: var(--subtitle-text-color1);
-    padding-top: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     }
 .program__text-description {
     font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
     color: var(--subtitle-text-color1);
     font-size: 16px;
-    text-align: center;
-    padding-top: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
     }
+
 .advantage__technique {
-    background-color: #f1ede1
+    background-image: url(img_css/advantage_technique_bg.png);
+    background-size: cover;
+    background-color: var(--background-color);
+    background-position-x: 100%, 0%;
+    background-position-y: 78.62%, 0%;
     }
+.technique__icon {
+    margin-top: 15%;
+}
 
 .technique__text-header {
     font-family: Rajdhani;
     font-size: 33px;
     color: var(--brand-color);
-    padding-top: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     }
 .technique__text-description {
     font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
     color: var(--subtitle-text-color2);
-    padding-top: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .advantage__success {
-    background-color: rgb(30, 25, 23);
+    background-image: url(img_css/advantage_success.png);
+    background-size: cover;
+    background-color: var(--background-color-dark);
+    background-position-x: 100%, 0%;
+    background-position-y: 78.62%, 0%;
 }
 
-.advantage__text-header {
+.success__icon {
+    margin-top: 15%;
+}
+
+.success__text-header {
     font-family: Rajdhani;
     font-size: 33px;
     color: var(--subtitle-text-color1);
-    padding-top: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.advantage__text-description {
+.success__text-description {
     font-family: Roboto, sans-serif;
     color: var(--subtitle-text-color1);
-    padding-top: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: 400;
+    line-height: 24px;
 }

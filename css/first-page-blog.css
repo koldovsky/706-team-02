@@ -1,0 +1,48 @@
+.blog__first-img {
+    padding-left: 0px;
+    margin: 27px;
+}
+
+.blog__second-img {
+    padding-left: 0px;
+    margin: 27px;
+}
+
+.blog__third-img {
+    padding-left: 0px;
+    margin: 27px;
+}
+
+.blog__header {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    color: var(--subtitle-text-color2);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.blog__last-text {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog__special-font {
+    color: var(--brand-color);
+    font-size: 26px;
+    line-height: 1.43;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: .05em;
+    text-transform: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+

@@ -18,6 +18,10 @@
     <nav class="header__nav">
       <div class="header__nav-logo">
         <a href="http://site.com"></a><img width="126" class="logo" src="img/logo.svg" alt="logo">
+        <div class="header__menu-buttons">
+          <button class="menu-burger menu-button"><img src="img/menu-burger.png" alt="Menu open button"></button>
+          <button class="menu-close menu-button"><img src="img/menu-close.png" alt="Menu close button"></button>  
+        </div>
       </div>
       <div class="header__nav-menu">
         <a href="#about" class="menu__link">About us</a>
@@ -33,8 +37,8 @@
       </div>
       <div class="header__title">
         <p class="header__title-subtitle">Become a champion at</p>
-        <h1 class="header__title-left">BOXING SCHOOL!</h1>
-        <p class="header__button1">free training</p>
+        <h1 class="header__title-left">BOXING <br> SCHOOL!</h1>
+        <p class="header__button-one">free training</p>
       </div>
     </nav>
   </header>
@@ -43,7 +47,7 @@
   <main>
     <!--Dmitry Degtyarev BLOCK-2-->
     <div class="main__services">
-      <article class="services__card man">
+      <article class="services__card services__card-man">
         <div class="card__inner">
           <h2 class="card__title">ADULTS</h2>
           <div class="divider"></div>
@@ -53,7 +57,7 @@
           </a>
         </div>
       </article>
-      <article class="services__card child">
+      <article class="services__card services__card-child">
         <div class="card__inner">
           <h2 class="card__title">CHILDREN</h2>
           <div class="divider"></div>
@@ -63,7 +67,7 @@
           </a>
         </div>
       </article>
-      <article class="services__card woman">
+      <article class="services__card services__card-woman">
         <div class="card__inner">
           <h2 class="card__title">SELF-DEFENCE</h2>
           <div class="divider"></div>
@@ -199,12 +203,12 @@
         </div>
       </div>
       <div class="advantage__success">
-        <div class="advantage__icon">
+        <div class="success__icon">
           <img width="70" src="img/boxing-gloves.svg" alt="two hanging gloves">
         </div>
-        <div class="advantage__text">
-          <h3 class="advantage__text-header">SUCCESS</h3>
-          <p class="advantage__text-description">In our school, you will not only learn how to throw kicks effectively
+        <div class="success__text">
+          <h3 class="success__text-header">SUCCESS</h3>
+          <p class="success__text-description">In our school, you will not only learn how to throw kicks effectively
             but also how to get in shape and gain strength.</p>
         </div>
       </div>
@@ -393,7 +397,7 @@
             <p>Sign up</p>
           </a></center>
       </div>
-      <div class="freetrial__inner"></div>
+      <div class="freetrial__inner inner__emptiness"></div>
     </div>
     <!--Degtyarev Dmitry Block-13-->
 
@@ -406,101 +410,110 @@
         <p class="testimonials__introduction-phrase">These people below are not just our students, they are
           our family.
         </p>
-      </div>
 
-      <div class="slideshow-container">
-        <div class="slideshow-container__slide-one">
-          <img class='slideshow-container__exponent-photo' alt="Photo of Lukas Peterson"
-            src="img/img-testimonials/lucas-peterson.webp">
-          <div class="slideshow-container__exponent-name">Lucas Peterson</div>
-          <div class="slideshow-container__social-icons">
-            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
-            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+        <div class="testimonials__slideshow">
+          <div class="slideshow-container__buttons">
+            <a class="buttons__prev">&#10094;</a>
+            <a class="buttons__next">&#10095;</a>
           </div>
-          <p class="slideshow-container__exponent-feedback"><q>I've never boxed before, my friend invited me to this
-              school.
-              And I had a
-              lot of fun when
-              training.
-              Now I have been doing boxing for 2 years at this school and I am completely satisfied. It has really
-              great and caring coaches.</q></p>
-          <div class="slideshow-container__date">
-            <p class='date__pub'>December 15, 2019</p>
+          <br>
+          <div class="slideshow-container__dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
           </div>
-        </div>
-        <div class="slideshow-container__slide-two">
-          <img class='slideshow-container__exponent-photo' alt='Photo of Jessica Edam'
-            src="img/img-testimonials/jessica-edam.webp">
-          <div class="slideshow-container__exponent-name">Jessica Edam</div>
-          <div class="slideshow-container__social-icons">
-            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
-            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-          </div>
-          <p class="slideshow-container__exponent-feedback"><q>I decided to change school after I realized that
-              training at the
-              previous
-              school did not work. My colleague advised me to choose this school, and I am completely happy
-              with
-              my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
-          <div class="slideshow-container__date">
-            <p class='date__pub'>March 02, 2020</p>
+          <div class="slideshow-container" id='slides'>
+            <div class="slideshow-container__slide-one">
+              <img class='slideshow-container__exponent-photo' alt="Photo of Lukas Peterson"
+                src="img\img-testimonials\lucas-peterson.webp">
+              <div class="slideshow-container__exponent-name">Lucas Peterson</div>
+              <div class="slideshow-container__social-icons">
+                <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+              </div>
+              <p class="slideshow-container__exponent-feedback"><q>I've never boxed before, my friend invited
+                  me
+                  to this
+                  school.
+                  And I had a
+                  lot of fun when
+                  training.
+                  Now I have been doing boxing for 2 years at this school and I am completely satisfied.
+                  It
+                  has really
+                  great and caring coaches.</q></p>
+              <div class="slideshow-container__date">
+                <p class='date__pub'>December 15, 2019</p>
+              </div>
+            </div>
+            <div class="slideshow-container__slide-two">
+              <img class='slideshow-container__exponent-photo' alt='Photo of Jessica Edam'
+                src="img\img-testimonials\jessica-edam.webp">
+              <div class="slideshow-container__exponent-name">Jessica Edam</div>
+              <div class="slideshow-container__social-icons">
+                <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+              </div>
+              <p class="slideshow-container__exponent-feedback"><q>I decided to change school after I realized
+                  that
+                  training at the
+                  previous
+                  school did not work. My colleague advised me to choose this school, and I am completely
+                  happy
+                  with
+                  my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
+              <div class="slideshow-container__date">
+                <p class='date__pub'>March 02, 2020</p>
 
-          </div>
-        </div>
-        <div class="slideshow-container__slide-three">
-          <img class='slideshow-container__exponent-photo' alt='Photo of Adriana Hoe'
-            src="img/img-testimonials/adriana-hoe.webp">
-          <div class="slideshow-container__exponent-name">Adriana Hoe</div>
-          <div class="slideshow-container__social-icons">
-            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
-            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-          </div>
-          <p class="slideshow-container__exponent-feedback"><q>I decided to change school after I realized that
-              training at the
-              previous
-              school did not work. My colleague advised me to choose this school, and I am completely happy
-              with
-              my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
-          <div class="slideshow-container__date">
-            <p class='date__pub'> September 02, 2020</p>
+              </div>
+            </div>
+            <div class="slideshow-container__slide-three">
+              <img class='slideshow-container__exponent-photo' alt='Photo of Adriana Hoe'
+                src="img\img-testimonials\adriana-hoe.webp">
+              <div class="slideshow-container__exponent-name">Adriana Hoe</div>
+              <div class="slideshow-container__social-icons">
+                <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+              </div>
+              <p class="slideshow-container__exponent-feedback"><q>I decided to change school after I realized
+                  that
+                  training at the
+                  previous
+                  school did not work. My colleague advised me to choose this school, and I am completely
+                  happy
+                  with
+                  my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
+              <div class="slideshow-container__date">
+                <p class='date__pub'> September 02, 2020</p>
 
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="slideshow-container__buttons">
-          <a class="buttons__prev">&#10094;</a>
-          <a class="buttons__next">&#10095;</a>
-        </div>
-        <br>
-        <div class="slideshow-container__dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
         </div>
       </div>
     </section>
-
     <!-- Dmytriiev Oleksandr -->
     <!-- Drobot Rostyslav-->
     <!--Block #15 Oleksandr -->
     <div>
       <span class="blog__special-font">Blog</span>
       <h4 class="blog__header">RECENT BOXING NEWS</h4>
-      <hr>
+      <hr color="red">
       <p class="blog__last-text">Want to know more about boxing? Read our articles!</p>
     </div>
     <div class="blog__three-images">
       <img src="https://res2.weblium.site/res/5f365e3e6e81a2002141b4ff/5f3cbf1ad6ff9f00221aaefd_optimized.webp"
-        alt="one girl boxing" height="450" width="390" class="blog__first-img">
+        alt="one girl boxing" width="370" height="403" class="blog__first-img">
       <img src="https://res2.weblium.site/res/5f365e3e6e81a2002141b4ff/5f3bec0cd6ff9f002216b9ee_optimized_1396.webp"
-        alt="two boxers stand face to face and boxing" height="450" width="390" class="blog__second-img">
+        alt="two boxers stand face to face and boxing" width="430" height="403" class="blog__second-img">
       <img src="https://res2.weblium.site/res/5f365e3e6e81a2002141b4ff/5f3ced95cf900b002167fbe5_optimized_982.webp"
-        alt="" height="450" width="390" class="blog__third-img">
+        alt="" width="370" height="403" class="blog__third-img">
     </div>
   </main>
 
@@ -524,17 +537,19 @@
               <div class="contacts__address__details">
                 <div class="address-details__inner-address">
                   <p class="contacts__text-address">Address</p>
-                  <address>104-58 109th St, Jamaica,<br>NY 11419, USA<br> </address>
+                  <p class="address">104-58 109th St, Jamaica,<br>NY 11419, USA<br> </p>
                 </div>
                 <div class="address-details__inner-contacts">
                   <p class='contacts__text-contact'>Contacts</p>
-                  <p class="contacts__link"><a href="tel:+12345678900" data-action="phone">+1(234)567 89 00</a><br>
-                    <a class='contacts__link' href="mailto:boxingschool@email.com" data-action="email">boxingschool@email.com</a><br>
+                  <p class="contacts__links"><a class="contacts__link" href="tel:+12345678900"
+                      data-action="phone">+1(234)567 89 00</a><br>
+                    <a class='contacts__link' href="mailto:boxingschool@email.com"
+                      data-action="email">boxingschool@email.com</a><br>
                   </p>
                 </div>
               </div>
               <div class="contacts__map">
-                <iframe width="450" height="200" style="border: 0;"
+                <iframe height=255" width="100%" style="border: 0;"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24191.718814806336!2d-74.02372153939248!3d40.71879024047483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592fd932c769%3A0x8a079779c9f08a65!2sHudson%20Boxing%20Gym!5e0!3m2!1sfr!2sge!4v1657216986865!5m2!1sfr!2sge"
                   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
@@ -544,18 +559,23 @@
               <div class="form__inner">
                 <div class="inner__background">
                   <form class="form">
-                    <input class='form__user-name' type="text" placeholder="Enter your full name*" name="user-name">
+                    <input class='form__user-name' type="text" placeholder="Enter your full name*" name="user-name"
+                      required>
                     <input class='form__user-number' type="number" placeholder="Enter your phone number*"
-                      name="user-phone-number">
-                    <input class='form__user-email' type="email" placeholder="Enter your e-mail*" name="user-email">
-                    <button class='form__date-picker' type="button" name="form-date">Choose
-                      date
-                      <img class='form__img-calendar' alt="calendar button" src="img/calendar-month.svg">
-                    </button>
-                    <button class='form__button' type="submit" value="submit">SIGN UP FOR A
-                      FREE
-                      TRAINING
-                    </button>
+                      name="user-phone-number" required>
+                    <input class='form__user-email' type="email" placeholder="Enter your e-mail*" name="user-email"
+                      required>
+                    <div class="contacts__buttons">
+                      <button class='form__date-picker' type="button" name="form-date" aria-required="true">Choose
+                        date
+                        <img class='form__img-calendar' alt="calendar button"
+                          src="img\img-testimonials\calendar-month.svg">
+                      </button>
+                      <button class='form__button' type="submit" value="submit">SIGN UP FOR A
+                        FREE
+                        TRAINING
+                      </button>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -595,6 +615,7 @@
       </div>
     </div>
   </footer>
+  <script src="JS\carousel.js"></script>
 </body>
 
 </html>
