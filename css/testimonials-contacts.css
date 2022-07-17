@@ -1,10 +1,13 @@
 /* Testimonials CSS*/
 .testimonials {
     background-color: var(--background-color);
+    padding: 90px 0;
+}
+
+.testimonials__inner {
     height: 100vh;
     width: 100%;
     position: relative;
-    padding-top: 40px;
 }
 
 
@@ -88,7 +91,8 @@
     font-family: 'Rajdhani';
     color: var(--brand-color);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 24px;
+    font-weight: 700;
 }
 
 .slideshow-container__social-icons {
