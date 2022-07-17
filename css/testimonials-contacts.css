@@ -1,23 +1,24 @@
 /* Testimonials CSS*/
 .testimonials {
-    background-color: var(--background-color);
+    background-color: rgb(241, 237, 225);
+    height: 100vh;
     width: 100%;
-
+    position: relative;
+    padding-top: 40px;
 }
 
+
 .testimonials__title {
-    color: var(--brand-color);
-    font-family: 'homemade apple';
+    color: red;
+    font-family: 'Homemade apple';
     font-size: 26px;
-    margin: 0;
-    border: 0;
     text-align: center;
     margin: 0;
     border: 0;
 }
 
 .testimonials__subtitle {
-    color: var(--subtitle-text-color2);
+    color: #16120f;
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     text-align: center;
@@ -25,13 +26,13 @@
     padding-bottom: 20px;
 }
 
-.testimonials__subtitle::after {
+.testimonials__subtitle:after {
     content: "";
     width: 50px;
     height: 2px;
     display: block;
     position: relative;
-    background-color: var(--divider-color);
+    background-color: red;
     bottom: 45%;
     left: 48%;
     margin-top: 20px;
@@ -47,64 +48,110 @@
 
 .slideshow-container {
     display: flex;
+    width: 2400px;
+    transition: 0.5s;
+
+
+}
+
+.slideshow-container__slide-one,
+.slideshow-container__slide-two,
+.slideshow-container__slide-three {
+    width: 800px;
     position: relative;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+
 }
 
 .slideshow-container__exponent-photo {
     display: flex;
-    position: relative;
-    left: 45.4%;
     border-radius: 50%;
     width: 120px;
     height: 120px;
     justify-content: center;
     object-fit: cover;
+    margin: auto;
 }
 
+.testimonials__slideshow {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -110%);
+
+}
 
 
 .slideshow-container__exponent-name {
-    font-family: 'Rajdhani', sans-serif;
-    color: var(--brand-color);
+    font-family: 'Rajdhani';
+    color: #d62324;
     text-align: center;
+    padding-top: 20px;
 }
 
+.slideshow-container__social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0;
+}
+
+.fa {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.fa:hover {
+    color: red;
+}
 
 .slideshow-container__exponent-feedback {
     letter-spacing: .05em;
-    color: var(--paragraph-text-color);
+    color: #707070;
     text-transform: none;
+    text-align: center;
+    padding: 20px 0;
 }
 
-
+.slideshow-container__dots {
+    display: inline-block;
+    position: absolute;
+    left: 47%;
+    top: 90%;
+}
 
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
-    background-color: var(--carousel-indicators-color);
+    background-color: #d55959;
     border-radius: 50%;
     display: inline-block;
-    transition: 0.6s ease;
+}
+
+.active {
+    background-color: #d62324;
+    width: 15px;
+    height: 15px;
+}
+
+.slideshow-container__buttons {
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: #d62324;
 }
 
 .date__pub {
     letter-spacing: .1em;
     font-weight: bold;
-    color: var(--subtitle-text-color2);
-}
-
-.fa {
-    text-decoration: none;
-    color: var(--subtitle-text-color2);
-}
-
-.fa:hover {
-    color: var(--brand-color);
+    color: black;
+    text-align: center;
 }
 
 /* contacts css*/
