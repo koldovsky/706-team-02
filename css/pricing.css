@@ -47,8 +47,8 @@
 	margin-top: 60px;
 }
 .pricing-list > li {
-	flex-basis: 33%;
 	padding: 0 15px;
+	display: flex;
 }
 
 .pricing-item {
@@ -56,6 +56,8 @@
 	padding: 40px 37px;
 	box-shadow: 0 4px 13px 0 rgb(28 30 30 / 18%);
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .pricing-item-title {
@@ -94,6 +96,7 @@
 .pricing-item-list {
 	padding-left: 25px;
 	margin-top: 20px;
+	flex-grow: 1;
 }
 .pricing-item-list li {
 	font-family: Roboto;
