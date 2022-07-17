@@ -34,17 +34,17 @@
     margin: 10px;
 }
 
-.man {
+.services__card-man {
     /*multiclass services__card*/
     background-image: url(img_css/boxing_human_card.png);
 }
 
-.child {
+.services__card-child {
     /*multiclass services__card*/
     background-image: url(img_css/boxing_child_card.png);
 }
 
-.woman {
+.services__card-woman {
     /*multiclass services__card*/
     background-image: url(img_css/boxing_woman_card.png);
 }
