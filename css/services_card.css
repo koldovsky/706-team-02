@@ -35,17 +35,14 @@
 }
 
 .services__card-man {
-    /*multiclass services__card*/
     background-image: url(img_css/boxing_human_card.png);
 }
 
 .services__card-child {
-    /*multiclass services__card*/
     background-image: url(img_css/boxing_child_card.png);
 }
 
 .services__card-woman {
-    /*multiclass services__card*/
     background-image: url(img_css/boxing_woman_card.png);
 }
 
@@ -62,7 +59,7 @@
     display: block;
     width: 166px;
     padding: 10px 5px;
-    background: var(--brand-color);
+    background: var(--background-button-color);
     color: var(--subtitle-text-color1);
     text-decoration: none;
 }
