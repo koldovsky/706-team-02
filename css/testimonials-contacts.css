@@ -323,9 +323,7 @@
     }
 
     .form__img-calendar {
-        height: 19px;
-        width: 23px;
-        color: var(--subtitle-text-color1);
+        fill: currentColor;
     }
 
     .form__button:hover {
@@ -584,9 +582,7 @@
     }
 
     .form__img-calendar {
-        height: 19px;
-        width: 23px;
-        color: var(--subtitle-text-color1);
+        fill: aliceblue;
     }
 
     .form__button:hover {
@@ -594,4 +590,5 @@
         color: var(--subtitle-text-color2);
         cursor: pointer;
     }
+
 }
