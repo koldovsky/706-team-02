@@ -52,3 +52,14 @@
 	display: flex;
 	align-items: center;
 }
+
+@media (max-width: 825px) {
+	.freetrial__inner {
+		width: 100%;
+		margin: auto;
+	}
+
+	.inner__emptiness {
+		display: none;
+	}
+}
