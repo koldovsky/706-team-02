@@ -28,6 +28,12 @@
     }
   }
 
+  .header__title-subtitle {
+    font-family: 'Homemade Apple';
+    color: var(--brand-color);
+  
+  }
+
   .header__title-left {
     font-family: 'Rajdhani', sans-serif;
     font-size: 44px;
@@ -92,6 +98,33 @@
 }
 
 
-.header__title-subtitle {
-    font-family: 'Homemade Apple';
+
+
+.header__button-one {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--subtitle-text-color1);
 }
+
+.header__title a {
+    margin-top: 15px;
+    display: block;
+    width: 240px;
+    padding: 18px 6px;
+    background: var(--background-button-color);
+    color: var(--subtitle-text-color1);
+    text-decoration: none;
+}
+
+.header__title a:hover {
+    color: var(--subtitle-text-color1);
+    background: #333;
+    transition: all 0.3s linear;
+    --webkit-transition: all 0.3s linear;
+    --moz-transition: all 0.3s linear;
+}
+
+
+
