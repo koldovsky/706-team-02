@@ -1,82 +1,130 @@
 .header {
-    background-image: url(img_css-header/header__man-woman.png);
+    background-image: url(../img/header__man-woman.png);
+    height: 150vh;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-position: center;   
-}
-.header__nav-logo {
-    padding-top: 20px;
+  }
+
+  .header__nav {
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px 15px 0; 
-}
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
 
-.header__nav-logo ul {
-    display: flex;
-}
+  .header__nav-logo {
+    max-width: 180px;
+    margin-left: 15px;
+  }
 
-.header__nav-log .header__nav-menu a {
-    color: var(--main-color);
-    position: relative;
-}
-
-.header__nav-log .header__nav-menu a:hover {
-    color: #ff5b2e;
-}
-
-.header__nav-log .header__nav-menu a:hover::before {
-    content: "";
-    background-color: #ff5b2e;
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 30px;
-    height: 2px;
-} 
-
-.header__nav-logo {
-   width: 150px;
-}
-
-.menu__link {
-    margin: 0 15px;
-}
-
-.header__menu-buttons {
+  .header__nav-menu {
     display: none;
+  }
+
+  @madia (min-width:1000px){
+    .header__nav-menu{
+        display: flex;
+    }
+  }
+
+  .header__title-subtitle {
+    font-family: 'Homemade Apple';
+    color: var(--brand-color);
+  
+  }
+
+  .header__title-left {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 44px;
+    line-height: 47px;
+    font-weight: 700;
+    color: var(--subtitle-text-color1);
+    text-align: left;
+    margin-top: 7rem;
+  }
+
+  @media (min-width: 750px) {
+    .header__title-left {
+        font-size: 65px;
+        line-height: 70px;
+        margin-top: 10rem;
+    }
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  @media (min-width: 1000px) {
+    .header__title-left {
+      font-size: 74px;
+      line-height: 79px;
+    }
 }
-
-.header__nav-icons {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding: 5px;
-    margin: 0 5px;
-    transition: 0.3s;
-}
-
-
-
-
 
 .header__nav-menu {
-   width: auto;
-   list-style: none;
-   padding: 0;
-   font-size: 24px;
-   margin: 0 auto;
+    font-weight: 700;
+    color: var(--subtitle-text-color1);
+    font-style: 16px;
+    position: relative;
+    transition: 0.3s ease;
 }
 
-.header__nav-menu a {
-    display: block;
-    margin: 0;
-    padding: 0;
-    float: left;
+.header__nav-menu + .header__nav-menu {
+    margin-left: 30px;
+}
+
+.header__nav-menu::after {
+    content: ' ';
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--subtitle-text-color1);
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    opacity: 0;
+}
+
+.header__nav-menu:hover::after {
+    opacity: 1;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.header__nav-menu:hover {
+    color: var(--brand-color);
+}
+
+
+
+
+.header__button-one {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: 'Rajdhani', sans-serif;
     color: var(--subtitle-text-color1);
 }
+
+.header__title a {
+    margin-top: 15px;
+    display: block;
+    width: 240px;
+    padding: 18px 6px;
+    background: var(--background-button-color);
+    color: var(--subtitle-text-color1);
+    text-decoration: none;
+}
+
+.header__title a:hover {
+    color: var(--subtitle-text-color1);
+    background: #333;
+    transition: all 0.3s linear;
+    --webkit-transition: all 0.3s linear;
+    --moz-transition: all 0.3s linear;
+}
+
 
 

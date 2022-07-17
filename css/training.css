@@ -69,6 +69,7 @@
 	flex-basis: 33%;
 	padding: 0 15px;
 	flex-shrink: 0;
+	display: flex;
 }
 
 .training-class-price {
@@ -87,6 +88,7 @@
 	letter-spacing: 1.4px;
 	line-height: 19.6px;
 	text-align: left;
+	flex-grow: 1;
 }
 
 .training-class {
@@ -94,6 +96,8 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	display: flex;
+	flex-direction: column;
 }
 
 .training-class.adults {
@@ -124,9 +128,10 @@
 	cursor: pointer;
 }
 
-.training-class-sign-up :hover {
+.training-class-sign-up:hover {
 	box-shadow: 0 4px 14px 0 rgb(45 45 45 / 26%);
-	background-color: rgb(255, 255, 255);
+	background-color: var(--subtitle-text-color1);
+	color: var(--subtitle-text-color2);
 	transition: color 0.2s ease-in, background-color 0.2s ease-in, border-color 0.2s ease-in, box-shadow 0.2s ease-in,
 		-webkit-box-shadow 0.2s ease-in;
 }
