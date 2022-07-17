@@ -134,6 +134,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: -50px -15px 0;
+        flex-basis: 100%;
     }
 
     .contacts__details {
@@ -240,7 +241,7 @@
         display: block;
         position: relative;
         height: 255px;
-        max-width: 719px;
+        width: 100%;
         margin-top: 30px;
         cursor: grabbing;
     }
@@ -280,17 +281,16 @@
 
     .form__user-name,
     .form__user-number,
-    .form__user-email,
-    .form__date-picker {
+    .form__user-email {
         display: block;
-        border-style: solid;
+        border-style: 2pxsolid;
         border-width: 2px;
         border-color: var(--input-border-color);
         background-color: var(--background-form-color);
         color: var(--input-text-color);
         font-size: 12px;
         font-family: 'Roboto';
-        margin-top: 12px;
+        margin-top: 20px;
         padding: 20px 50px;
         width: 100%;
         line-height: 15px;
@@ -303,6 +303,15 @@
         justify-content: space-between;
         align-items: center;
         color: var(--input-text-color);
+        border: 2px solid var(--input-border-color);
+        background-color: var(--background-form-color);
+        color: var(--input-text-color);
+        font-size: 12px;
+        font-family: 'Roboto';
+        width: 100%;
+        padding: 20px 50px;
+        height: 59px;
+        margin-top: 20px;
     }
 
     .form__button {
@@ -313,7 +322,7 @@
         font-size: 12px;
         font-family: 'Roboto';
         border: 2px transparent solid;
-        text-align: center;
+        align-items: center;
         margin-top: 50px;
         padding: 20px 50px;
         width: 100%;
@@ -333,6 +342,93 @@
     }
 }
 
+@media (max-width:460px) {
+    .form__date-picker {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--input-text-color);
+        border: 2px solid var(--input-border-color);
+        background-color: var(--background-form-color);
+        color: var(--input-text-color);
+        font-size: 10px;
+        font-family: 'Roboto';
+        width: 100%;
+        padding: 20px 30px;
+        height: 59px;
+        margin-top: 20px;
+
+    }
+
+    .form__button {
+        font-size: 10px;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .form__user-name,
+    .form__user-number,
+    .form__user-email {
+        display: block;
+        border-style: solid;
+        border-width: 2px;
+        border-color: var(--input-border-color);
+        background-color: var(--background-form-color);
+        color: var(--input-text-color);
+        font-size: 10px;
+        font-family: 'Roboto';
+        margin-top: 20px;
+        padding: 20px 30px;
+        width: 100%;
+        line-height: 15px;
+        text-align: left;
+        font-weight: 400;
+    }
+}
+
+@media (max-width:363px) {
+    .form__date-picker {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--input-text-color);
+        border: 2px solid var(--input-border-color);
+        background-color: var(--background-form-color);
+        color: var(--input-text-color);
+        font-size: 8px;
+        font-family: 'Roboto';
+        width: 100%;
+        padding: 20px 25px;
+        height: 59px;
+    }
+
+    .form__button {
+        font-size: 8px;
+        align-items: center;
+    }
+
+    .form__user-name,
+    .form__user-number,
+    .form__user-email {
+        display: block;
+        border-style: solid;
+        border-width: 2px;
+        border-color: var(--input-border-color);
+        background-color: var(--background-form-color);
+        color: var(--input-text-color);
+        font-size: 8px;
+        font-family: 'Roboto';
+        margin-top: 20px;
+        padding: 20px 25px;
+        width: 100%;
+        line-height: 15px;
+        text-align: left;
+        font-weight: 400;
+    }
+}
 
 
 @media (min-width:767px) {
@@ -529,9 +625,7 @@
     .form__user-number,
     .form__user-email {
         display: block;
-        border-style: solid;
-        border-width: 2px;
-        border-color: var(--input-border-color);
+        border: 2px solid var(--input-border-color);
         background-color: var(--background-form-color);
         color: var(--input-text-color);
         font-size: 12px;
