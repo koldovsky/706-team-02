@@ -1,6 +1,10 @@
 .blog {
     position: relative;
 }
+.blog-main {
+    display: flex;
+    justify-content: center;
+}
 .footer {
     position: fixed;
     bottom: 0;
@@ -8,10 +12,14 @@
     left: 0;
 }
 .blog__header {
-    text-align: center;
+    border-bottom: 2px solid var(--brand-color);
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
 }
 .blog__container {
-    border: 1px solid black;
+    border: 1px solid #C8C8C8;
     margin-left: 5%;
     margin-right: 5%;
 }
