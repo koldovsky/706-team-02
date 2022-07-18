@@ -13,7 +13,7 @@
 }
 .blog__header {
     border-bottom: 2px solid var(--brand-color);
-    width: 50px;
+    width: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
@@ -29,4 +29,8 @@
 }
 .blog__container-header {
     text-align: center;
+}
+.blog__container-content-box {
+    border: 1px solid #C8C8C8;
+    margin-left: 20px;
 }
