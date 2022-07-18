@@ -76,20 +76,19 @@
     .main__services {
         display: block;
     }
-    .man {
-        width: 100%;
+    .services__card-man {
+        width: 90%;
         margin: auto;
         margin-top: 10px;
     }
-    .child {
-        width: 100%;
+    .services__card-child {
+        width: 90%;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
-
     }
-    .woman {
-        width: 100%;
+    .services__card-woman {
+        width: 90%;
         margin: auto;
         margin-bottom: 10px;
     }
