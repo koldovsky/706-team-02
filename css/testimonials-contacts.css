@@ -137,7 +137,7 @@
     display: inline-block;
 }
 
-.active {
+.dot.active {
     background-color: var(--brand-color);
     width: 15px;
     height: 15px;

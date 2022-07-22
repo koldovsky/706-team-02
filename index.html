@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boxing School</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
@@ -20,7 +21,7 @@
         <a href="http://site.com"></a><img width="126" class="logo" src="img/logo.svg" alt="logo">
         <div class="header__menu-buttons">
           <button class="menu-burger menu-button"><img src="img/menu-burger.png" alt="Menu open button"></button>
-          <button class="menu-close menu-button"><img src="img/menu-close.png" alt="Menu close button"></button>  
+          <button class="menu-close menu-button"><img src="img/menu-close.png" alt="Menu close button"></button>
         </div>
       </div>
       <div class="header__nav-menu">
@@ -124,7 +125,7 @@
         <h2 class="training-title">Training</h2>
         <h3 class="training-sub-title">Join our classes</h3>
         <p class="training-description">Choose any class and start boxing from the very first training!</p>
-        <ul class="training-list">
+        <ul class="training-list"  id="lightSlider">
           <li>
             <div class="training-class adults">
               <h4 class="training-item-title">For adults</h4>
@@ -615,7 +616,11 @@
       </div>
     </div>
   </footer>
-  <script src="JS\carousel.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+  <script src="js\carousel.js"></script>
+  <script src="js\lightslider.js"></script>
 </body>
 
 </html>
