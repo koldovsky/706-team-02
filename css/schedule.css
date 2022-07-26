@@ -44,7 +44,7 @@ table.schedule__table {
     border: 0.1em solid #a9a9a9;
     border-spacing: 0;
     position: inherit;
-    margin: 65px 363px;
+    margin: 65px auto;
     padding: 15px;
     border-left: none;
     border-bottom: none;
