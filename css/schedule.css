@@ -44,7 +44,7 @@ table.schedule__table {
     border: 0.1em solid #a9a9a9;
     border-spacing: 0;
     position: inherit;
-    margin: 65px 363px;
+    margin: 65px auto;
     padding: 15px;
     border-left: none;
     border-bottom: none;
@@ -93,7 +93,7 @@ td.schedule__rows-day {
     font-size: 18px;
     line-height: 1.56;
     font-family: Roboto, sans-serif;
-    font-weight: 500 !important;
+    font-weight: 600;
     text-decoration: none;
     font-style: normal;
     letter-spacing: 0;

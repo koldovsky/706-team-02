@@ -1,0 +1,13 @@
+@media (min-width: 851px) {
+    #upbutton {
+        background: url(img_css/up.png) no-repeat top left;
+        height: 63px;
+        width: 70px;
+        bottom: 30px;
+        right: 30px;
+        cursor: pointer;
+        display: none;
+        position: fixed;
+        z-index: 999;
+    }
+}
