@@ -1,0 +1,73 @@
+div.block-name {
+    text-align: center;
+    padding: 100px 0;
+    background-color: var(--subtitle-text-color1);
+}
+
+h2.team__block-name {
+    color: var(--brand-color);
+    font-size: 26px;
+    line-height: 1.43;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: .05em;
+    text-transform: none;
+}
+
+aside.meet__block-name {
+    display: block;
+}
+
+blok-name__divider {
+    border-bottom: 2px solid var(--brand-color);
+    width: 50px;
+    margin: -3px 48%;
+}
+
+div.block-name aside.meet__block-name {
+    font-size: 56px;
+    color: #16120f;
+    line-height: 1.2;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    padding-bottom: 20px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.meetcoacher-tom {
+    background-image: url(../css/img_css/coashe__tombellso.png);
+    padding-left: 0px;
+    margin: 27px;
+    text-align: center;
+}
+
+
+
+.meetcoacher-susan {
+    background-image: url(../css/img_css/coashe__susanhooler.png);
+    padding-left: 0px;
+    margin: 27px;
+    text-align: center;
+}
+
+.meetcoacher-daniel {
+    background-image: url(../css/img_css/coashe__danieljackson.png);
+    padding-left: 0px;
+    margin: 27px;
+    text-align: center;
+}
+
