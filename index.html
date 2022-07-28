@@ -323,12 +323,12 @@
       <div class=blok-name__divider"> </div>
     </div>
     <div class="MEETCOACHES">
-      <article class="meetcoacher">        
-          <div class="meetcoacher-tom">
-            <h3 class="coache">Tom Bellson</h3>
-            <p class="coache-tom">Tom is a boxer with a rich professional background. He is a WWDC champion of 2005,
-              2007, and 2010. Now he trains adults and children with great pleasure.</p>
-          </div>
+      <article class="meetcoacher">
+        <div class="meetcoacher-tom">
+          <h3 class="coache">Tom Bellson</h3>
+          <p class="coache-tom">Tom is a boxer with a rich professional background. He is a WWDC champion of 2005,
+            2007, and 2010. Now he trains adults and children with great pleasure.</p>
+        </div>
         <div class="meetcoacher-susan">
           <h3 class="coache">Susan Hooler</h3>
           <p class="coache-susan">Susan is one of the most experienced female boxing trainers, and a worldwide champion.
@@ -421,12 +421,15 @@
         <p class="testimonials__introduction-phrase">These people below are not just our students, they are
           our family.
         </p>
-
+        <div class="slideshow-container__buttons">
+          <button class="buttons__prev"><span class="material-symbols-outlined">
+            arrow_back_ios
+            </span></button> 
+          <button class="buttons__next"><span class="material-symbols-outlined">
+            arrow_forward_ios
+            </span></button>
+        </div>
         <div class="testimonials__slideshow">
-          <div class="slideshow-container__buttons">
-            <a class="buttons__prev">&#10094;</a>
-            <a class="buttons__next">&#10095;</a>
-          </div>
           <br>
           <div class="slideshow-container__dots">
             <span class="testimonials__dot active"></span>
@@ -434,7 +437,7 @@
             <span class="testimonials__dot"></span>
           </div>
           <div class="slideshow-container" id='testimonials__slides'>
-            <div class="slideshow-container__slide-one">
+            <div class="slideshow-container__slide-one" id="testimonials__slide">
               <img class='slideshow-container__exponent-photo' alt="Photo of Lukas Peterson"
                 src="img\img-testimonials\lucas-peterson.webp">
               <div class="slideshow-container__exponent-name">Lucas Peterson</div>
@@ -459,7 +462,7 @@
                 <p class='date__pub'>December 15, 2019</p>
               </div>
             </div>
-            <div class="slideshow-container__slide-two">
+            <div class="slideshow-container__slide-two" id="testimonials__slide">
               <img class='slideshow-container__exponent-photo' alt='Photo of Jessica Edam'
                 src="img\img-testimonials\jessica-edam.webp">
               <div class="slideshow-container__exponent-name">Jessica Edam</div>
@@ -482,7 +485,7 @@
 
               </div>
             </div>
-            <div class="slideshow-container__slide-three">
+            <div class="slideshow-container__slide-three" id="testimonials__slide">
               <img class='slideshow-container__exponent-photo' alt='Photo of Adriana Hoe'
                 src="img\img-testimonials\adriana-hoe.webp">
               <div class="slideshow-container__exponent-name">Adriana Hoe</div>
