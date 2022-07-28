@@ -1,5 +1,6 @@
-var dot = document.getElementsByClassName("dot");
-var slides = document.getElementById('slides');
+(function () {
+const dot = document.getElementsByClassName("testimonials__dot");
+const slides = document.getElementById('Testimonials__slides');
 
 dot[0].onclick = function () {
     slides.style.transform = "translateX(0px)";
@@ -22,3 +23,5 @@ dot[2].onclick = function () {
     }
     this.classList.add("active");
 }
+
+})();
