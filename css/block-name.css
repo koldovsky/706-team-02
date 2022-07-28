@@ -1,22 +1,18 @@
-div.block-name {
+.block-team {
     text-align: center;
     padding: 100px 0;
     background-color: var(--subtitle-text-color1);
 }
 
-h2.team__block-name {
-    color: var(--brand-color);
-    font-size: 26px;
-    line-height: 1.43;
-    font-family: 'Homemade Apple', cursive;
+.team__block-name {
+    font-family: 'Homemade Apple';
     font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    letter-spacing: .05em;
-    text-transform: none;
-}
+    font-size: 26px;
+    color: var(--brand-color);
+    text-align: center;
+  }
 
-aside.meet__block-name {
+.meet__block-name {
     display: block;
 }
 
@@ -38,36 +34,41 @@ div.block-name aside.meet__block-name {
     letter-spacing: 0;
     padding-bottom: 20px;
 }
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
 
+.meetcoacher-block {
+    display: flex;
+    height: 600px;
+    }
+ 
 .meetcoacher-tom {
     background-image: url(../css/img_css/coashe__tombellso.png);
-    padding-left: 0px;
-    margin: 27px;
+    background-size: cover;
+    margin: 5px;
     text-align: center;
 }
 
-
-
 .meetcoacher-susan {
     background-image: url(../css/img_css/coashe__susanhooler.png);
-    padding-left: 0px;
-    margin: 27px;
+    background-size: cover;
+    margin: 5px;
     text-align: center;
 }
 
 .meetcoacher-daniel {
     background-image: url(../css/img_css/coashe__danieljackson.png);
-    padding-left: 0px;
-    margin: 27px;
+    background-size: cover;
+    margin: 5px;
     text-align: center;
 }
 
+.coache {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.h3
+    text-align: center;
