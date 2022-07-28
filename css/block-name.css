@@ -38,7 +38,7 @@ div.block-name aside.meet__block-name {
 .meetcoacher-block {
     display: flex;
     height: 600px;
-    }
+}
  
 .meetcoacher-tom {
     background-image: url(../css/img_css/coashe__tombellso.png);
@@ -69,6 +69,3 @@ div.block-name aside.meet__block-name {
     color: #fff;
     text-align: center;
 }
-
-.h3
-    text-align: center;
