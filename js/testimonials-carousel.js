@@ -1,6 +1,6 @@
 (function () {
 const dot = document.getElementsByClassName("testimonials__dot");
-const slides = document.getElementById('Testimonials__slides');
+const slides = document.getElementById('testimonials__slides');
 
 dot[0].onclick = function () {
     slides.style.transform = "translateX(0px)";

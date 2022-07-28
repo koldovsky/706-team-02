@@ -77,12 +77,12 @@
 
 .testimonials__slideshow {
     width: 800px;
-    height: 400px;
+    height: 420px;
     overflow: hidden;
     position: absolute;
     left: 50%;
-    top: 110%;
-    transform: translate(-50%, -110%);
+    top: 65%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -124,10 +124,10 @@
     display: inline-block;
     position: absolute;
     left: 47%;
-    top: 90%;
+    top: 95%;
 }
 
-.dot {
+.testimonials__dot {
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -137,7 +137,7 @@
     display: inline-block;
 }
 
-.dot.active {
+.testimonials__dot.active {
     background-color: var(--brand-color);
     width: 15px;
     height: 15px;
