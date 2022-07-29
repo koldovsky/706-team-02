@@ -23,12 +23,5 @@
         }
         this.classList.add("active");
     }
-
-    const prevButton = document.querySelector('.buttons__prev');
-    prevButton.addEventListener('click', prev);
-
-    const nextButton = document.querySelector('.buttons__next');
-    nextButton.addEventListener('click', next);
-
 })();
 
