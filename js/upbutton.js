@@ -1,10 +1,17 @@
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-        if ($('#upbutton').is(':hidden')) {
-            $('#upbutton').css({ opacity: 1 }).fadeIn('slow');
-        }
-    } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+const scrollBtn = document.querySelector(".btn");
+const btnVisibility = () => {
+    if (window.scrollY > 400) {
+        scrollBtn.style.visibility = "visible";
+    } else {
+        scrollBtn.style.visibility = "hidden";
+    }
+};
+document.addEventListener("scroll", () => {
+    btnVisibility();
 });
-$('#upbutton').click(function () {
-    $('html, body').stop().animate({ scrollTop: 0 }, 300);
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
