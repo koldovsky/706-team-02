@@ -60,4 +60,8 @@
     .scroll-to-top {
         display: none;
     }
+    .btn-position {
+        display: none;
+    }
+    }
 }
