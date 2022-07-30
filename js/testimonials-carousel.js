@@ -1,27 +1,22 @@
 (function () {
-    const dot = document.getElementsByClassName("testimonials__dot");
+    const dots = document.getElementsByClassName("testimonials__dots");
     const slides = document.getElementById('testimonials__slides');
 
-    dot[0].onclick = function () {
-        slides.style.transform = "translateX(0px)";
-        for (i = 0; i < 3; i++) {
-            dot[i].classList.remove("active");
+
+    
+    function showSlide(idx) {
+        for (let i = 0; i <= dots.length - 1; i++) {
+            dots[i].classList.remove("active");
         }
-        this.classList.add("active");
+        dots[idx].classList.add("active");
+        slides.style.transform = `translateX(${-idx*800}px)`;
     }
-    dot[1].onclick = function () {
-        slides.style.transform = "translateX(-800px)";
-        for (i = 0; i < 3; i++) {
-            dot[i].classList.remove("active");
-        }
-        this.classList.add("active");
+
+    for (let i = 0; i <= dots.length; i++) {
+        dots[i].addEventListener('click', 
+                                () => showSlide(i) );
     }
-    dot[2].onclick = function () {
-        slides.style.transform = "translateX(-1600px)";
-        for (i = 0; i < 3; i++) {
-            dot[i].classList.remove("active");
-        }
-        this.classList.add("active");
-    }
+    
+  
 })();
 
