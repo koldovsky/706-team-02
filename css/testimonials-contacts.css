@@ -144,12 +144,10 @@
 }
 
 .slideshow-container__buttons {
-    top: 40%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+    top: 60%;
+    position: absolute;
     color: var(--brand-color);
-    margin: 0 150px;
+    width: 100%;
 }
 
 .buttons__prev,
@@ -160,6 +158,18 @@
     height: 35px;
     border: none;
 }
+
+.buttons__prev {
+    position: inherit;
+    left: 10%;
+}
+
+.buttons__next {
+    position: inherit;
+    right: 10%;
+}
+
+
 
 .material-symbols-outlined {
     color: var(--background-color);
