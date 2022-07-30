@@ -1,48 +1,84 @@
-.blog__first-img {
-    padding-left: 0px;
-    margin: 27px;
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rajdhani:wght@700&family=Roboto&display=swap');
+.blog-hr {
+    margin: auto;
 }
-
-.blog__second-img {
-    padding-left: 0px;
-    margin: 27px;
-}
-
-.blog__third-img {
-    padding-left: 0px;
-    margin: 27px;
-}
-
-.blog__header {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    color: var(--subtitle-text-color2);
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 56px;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 20px;
-}
-
-.blog__last-text {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.blog__special-font {
-    color: var(--brand-color);
-    font-size: 26px;
-    line-height: 1.43;
+.blog-red-text {
     font-family: 'Homemade Apple', cursive;
-    font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    letter-spacing: .05em;
-    text-transform: none;
+    color: red;
+    font-size: 25px;
+}
+.blog-recent-news {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+.blog-header-last-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.blog-images {
     display: flex;
-    justify-content: center;
-    margin: 10px;
+    justify-content: baseline;
+    align-items: flex-start;
+}
+
+.first-image-text {
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+.blog-first-img {
+    width: 400px;
+}
+
+
+.first-image-container {
+    position: relative;
+    display: flex;
+}
+
+
+.first-image-data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding-top: 250px ;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: larger;
+}
+.first-image-second-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 300px;
+    padding-left: 20px;
+    font-size: x-large;
+}
+.read-more-href {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 410px;
+    padding-left: 20px;
+    font-size: normal;
+}
+
+.new-paragraph-special {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 330px;
+    padding-left: 20px;
+    font-size: x-large;
 }
 

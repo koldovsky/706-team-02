@@ -546,20 +546,36 @@
       <!-- Dmytriiev Oleksandr -->
       <!-- Drobot Rostyslav-->
       <!--Block #15 Oleksandr -->
-      <div>
-        <span class="blog__special-font">Blog</span>
-        <h4 class="blog__header">RECENT BOXING NEWS</h4>
-        <hr color="red">
-        <p class="blog__last-text">Want to know more about boxing? Read our articles!</p>
-      </div>
-      <div class="blog__three-images">
-        <img src="https://res2.weblium.site/res/5f365e3e6e81a2002141b4ff/5f3cbf1ad6ff9f00221aaefd_optimized.webp"
-          alt="one girl boxing" width="370" height="403" class="blog__first-img">
-        <img src="https://res2.weblium.site/res/5f365e3e6e81a2002141b4ff/5f3bec0cd6ff9f002216b9ee_optimized_1396.webp"
-          alt="two boxers stand face to face and boxing" width="430" height="403" class="blog__second-img">
-        <img src="https://res2.weblium.site/res/5f365e3e6e81a2002141b4ff/5f3ced95cf900b002167fbe5_optimized_982.webp"
-          alt="" width="370" height="403" class="blog__third-img">
-      </div>
+      <section class="blog-main">
+        <header class="blog-header">
+           <p class="blog-red-text">Blog</p>
+          <p class="blog-recent-news">RECENT BOXING NEWS</p>
+          <hr color="red" width="50px" class="blog-hr">
+          <p class="blog-header-last-text">Want to know more about boxing? Read our articles!</p>
+        </header>
+
+        <div class="blog-images">
+
+          <div class="first-image-container">
+            <img src="img/img-blog/blog-first-img.webp" alt="one girl boxing" class="blog-first-img">
+
+            <div>
+            <span class="first-image-text">
+              <p class="first-image-data">September 01, 2020</p> 
+              <h1 class="first-image-second-text">Why Is Boxing Effective for</h1>
+              <p class="new-paragraph-special">Self-defence?</p>
+              <a href="second-page-blog.html" class="read-more-href">READ MORE → </a>
+            </span>
+            </div>
+          </div>
+
+
+      
+            
+          
+        </div>
+
+      </section>
   </main>
 
   <!--Block 17 Contacts Lesia Derkach-->
@@ -603,8 +619,7 @@
             <div class="contacts__form">
               <div class="form__inner">
                 <div class="inner__background">
-                  <form class="form" action="https://formspree.io/f/xbjbrrao"
-                  method="POST">
+                  <form class="form" action="https://formspree.io/f/xbjbrrao" method="POST">
                     <input class='form__user-name' type="text" placeholder="Enter your full name*" name="user-name"
                       required>
                     <input class='form__user-number' type="number" placeholder="Enter your phone number*"
