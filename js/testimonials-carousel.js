@@ -14,9 +14,8 @@
 
     for (let i = 0; i <= dots.length; i++) {
         dots[i].addEventListener('click', 
-                                () => showSlide(i) );
+        () => showSlide(i) );
     }
     
-  
 })();
 
