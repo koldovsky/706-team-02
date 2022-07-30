@@ -452,14 +452,6 @@
           <p class="testimonials__introduction-phrase">These people below are not just our students, they are
             our family.
           </p>
-          <div class="slideshow-container__buttons">
-            <button class="buttons__prev"><span class="material-symbols-outlined">
-                arrow_back_ios
-              </span></button>
-            <button class="buttons__next"><span class="material-symbols-outlined">
-                arrow_forward_ios
-              </span></button>
-          </div>
           <div class="testimonials__slideshow">
             <br>
             <div class="slideshow-container__dots">
@@ -468,7 +460,7 @@
               <span class="testimonials__dots"></span>
             </div>
             <div class="slideshow-container" id='testimonials__slides'>
-              <div class="slideshow-container__slide-one testimonials__slide">
+              <div class="slideshow-container__slide-one testimonials__slide carousel__item--visible">
                 <img class='slideshow-container__exponent-photo' alt="Photo of Lukas Peterson"
                   src="img\img-testimonials\lucas-peterson.webp">
                 <div class="slideshow-container__exponent-name">Lucas Peterson</div>
@@ -536,10 +528,17 @@
                     my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
                 <div class="slideshow-container__date">
                   <p class='date__pub'> September 02, 2020</p>
-
                 </div>
               </div>
             </div>
+          </div>
+          <div class="slideshow-container__buttons">
+            <button class="button__prev" aria-label="Previous slide"><span class="material-symbols-outlined">
+                arrow_back_ios
+              </span></button>
+            <button class="button__next" aria-label="Next slide"><span class="material-symbols-outlined">
+                arrow_forward_ios
+              </span></button>
           </div>
         </div>
       </section>
@@ -603,8 +602,7 @@
             <div class="contacts__form">
               <div class="form__inner">
                 <div class="inner__background">
-                  <form class="form" action="https://formspree.io/f/xbjbrrao"
-                  method="POST">
+                  <form class="form" action="https://formspree.io/f/xbjbrrao" method="POST">
                     <input class='form__user-name' type="text" placeholder="Enter your full name*" name="user-name"
                       required>
                     <input class='form__user-number' type="number" placeholder="Enter your phone number*"

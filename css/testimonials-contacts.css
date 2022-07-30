@@ -51,8 +51,8 @@
 }
 
 .slideshow-container {
-    display: flex;
     width: 2400px;
+    display: flex;
     transition: 0.5s;
 }
 
@@ -150,8 +150,8 @@
     width: 100%;
 }
 
-.buttons__prev,
-.buttons__next {
+.button__prev,
+.button__next {
     background-color: var(--carousel-indicators-color);
     border-radius: 50%;
     width: 35px;
@@ -159,12 +159,12 @@
     border: none;
 }
 
-.buttons__prev {
+.button__prev {
     position: inherit;
     left: 10%;
 }
 
-.buttons__next {
+.button__next {
     position: inherit;
     right: 10%;
 }
