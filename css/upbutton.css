@@ -1,13 +1,67 @@
-@media (min-width: 851px) {
-    #upbutton {
-        background: url(img_css/up.png) no-repeat top left;
-        height: 63px;
-        width: 70px;
-        bottom: 30px;
-        right: 30px;
-        cursor: pointer;
+.scroll-to-top {
+    position: relative;
+}
+
+.btn-position {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 20;
+}
+
+.btn-style {
+    background-color: var(--brand-color);
+    border: 2px solid var(--subtitle-text-color1);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: var(--subtitle-text-color1);
+    cursor: pointer;
+    animation: movebtn 3s ease-in-out infinite;
+    transition: all 0.5s ease-in-out;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.icon-style:hover {
+    animation: none;
+    background: var(--subtitle-text-color1);
+    color: var(--brand-color);
+    border: 2px solid var(--brand-color);
+}
+
+@keyframes movebtn {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*mobile start*/
+@media (max-width: 850px) {
+    .scroll-to-top {
         display: none;
-        position: fixed;
-        z-index: 999;
+    }
+
+    .btn-position {
+        display: none;
     }
 }

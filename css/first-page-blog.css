@@ -1,48 +1,209 @@
-.blog__first-img {
-    padding-left: 0px;
-    margin: 27px;
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rajdhani:wght@700&family=Roboto&display=swap');
+.blog-hr {
+    margin: auto;
 }
-
-.blog__second-img {
-    padding-left: 0px;
-    margin: 27px;
-}
-
-.blog__third-img {
-    padding-left: 0px;
-    margin: 27px;
-}
-
-.blog__header {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    color: var(--subtitle-text-color2);
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 56px;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 20px;
-}
-
-.blog__last-text {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.blog__special-font {
-    color: var(--brand-color);
-    font-size: 26px;
-    line-height: 1.43;
+.blog-red-text {
     font-family: 'Homemade Apple', cursive;
-    font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    letter-spacing: .05em;
-    text-transform: none;
+    color: red;
+    font-size: 25px;
+}
+.blog-recent-news {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+.blog-header-last-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.blog-images {
     display: flex;
-    justify-content: center;
-    margin: 10px;
+    justify-content: baseline;
+    align-items: flex-start;
+    height: 350px !important;
+    justify-content: space-around;
 }
 
+.first-image-text {
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+.blog-first-img {
+    width: 400px;
+}
+
+
+.first-image-container {
+    position: relative;
+    display: flex;
+}
+
+
+.first-image-data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding-top: 250px ;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: larger;
+    margin: auto;
+}
+.first-image-second-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 300px;
+    padding-left: 20px;
+    font-size: x-large;
+}
+.read-more-href {
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: normal;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.new-paragraph-special {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 330px;
+    padding-left: 20px;
+    font-size: x-large;
+    padding-bottom: 100px;
+}
+
+
+
+.second-image-text {
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+.blog-second-img {
+    width: 450px;
+    height: 463px;
+}
+
+
+.second-image-container {
+    position: relative;
+    display: flex;
+}
+
+
+.second-image-data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding-top: 250px ;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: larger;
+    margin: auto;
+}
+.second-image-second-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 300px;
+    padding-left: 20px;
+    font-size: x-large;
+}
+
+
+.second-new-paragraph-special {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 330px;
+    padding-left: 20px;
+    font-size: x-large;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+.third-image-text {
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+.blog-third-img {
+    width: 400px;
+    height: 463px;
+}
+
+
+.third-image-container {
+    position: relative;
+    display: flex;
+}
+
+
+.third-image-data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding-top: 250px ;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: larger;
+    margin: auto;
+}
+.third-image-second-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 300px;
+    padding-left: 20px;
+    font-size: x-large;
+}
+
+
+.third-new-paragraph-special {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding-top: 330px;
+    padding-left: 20px;
+    font-size: x-large;
+    padding-bottom: 100px;
+}
+
+.read-more-href {
+    font-size: small;
+}
+
+
+.carousel {
+    padding-top: 20px;
+}

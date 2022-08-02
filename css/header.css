@@ -22,11 +22,7 @@
     display: none;
   }
 
-  @madia (min-width:1000px){
-    .header__nav-menu{
-        display: flex;
-    }
-  }
+ 
 
   .header__title-subtitle {
     font-family: 'Homemade Apple';

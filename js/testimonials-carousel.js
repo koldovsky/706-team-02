@@ -1,34 +1,42 @@
 (function () {
-    const dot = document.getElementsByClassName("testimonials__dot");
-    const slides = document.getElementById('testimonials__slides');
+    const dots = document.getElementsByClassName("testimonials__dots");
+    const slides = document.getElementById("testimonials__slides");
+    let activeIndex = 0;
 
-    dot[0].onclick = function () {
-        slides.style.transform = "translateX(0px)";
-        for (i = 0; i < 3; i++) {
-            dot[i].classList.remove("active");
+    function showSlide(idx) {
+        console.log("showSlide index = " + idx);
+        for (let i = 0; i <= dots.length - 1; i++) {
+            dots[i].classList.remove("active");
         }
-        this.classList.add("active");
-    }
-    dot[1].onclick = function () {
-        slides.style.transform = "translateX(-800px)";
-        for (i = 0; i < 3; i++) {
-            dot[i].classList.remove("active");
-        }
-        this.classList.add("active");
-    }
-    dot[2].onclick = function () {
-        slides.style.transform = "translateX(-1600px)";
-        for (i = 0; i < 3; i++) {
-            dot[i].classList.remove("active");
-        }
-        this.classList.add("active");
+        activeIndex = idx;
+        dots[idx].classList.add("active");
+        slides.style.transform = `translateX(${-idx * 800}px)`;
     }
 
-    const prevButton = document.querySelector('.buttons__prev');
-    prevButton.addEventListener('click', prev);
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].addEventListener('click',
+            () => showSlide(i));
+    }
 
-    const nextButton = document.querySelector('.buttons__next');
-    nextButton.addEventListener('click', next);
+    function onArrowNext() {
+        if (activeIndex < dots.length) {
+            activeIndex = (activeIndex + 1) % dots.length;
+            showSlide(activeIndex);
+        }
+    }
 
+    function onArrowPrev() {
+        if (activeIndex > 0) {
+            activeIndex = activeIndex - 1;
+        } else {
+            activeIndex = dots.length - 1;
+        }
+        showSlide(activeIndex);
+    }
+
+    const nextBtn = document.querySelector(".button__next");
+    nextBtn.addEventListener('click', onArrowNext);
+
+    const prevBtn = document.querySelector(".button__prev");
+    prevBtn.addEventListener('click', onArrowPrev);
 })();
-
