@@ -106,8 +106,8 @@
         width: 100%;
     }
 
-    .buttons__prev,
-    .buttons__next {
+    .button__prev,
+    .button__next {
         background-color: var(--carousel-indicators-color);
         border-radius: 50%;
         width: 35px;
@@ -115,12 +115,12 @@
         border: none;
     }
 
-    .buttons__prev {
+    .button__prev {
         position: inherit;
         left: 10%;
     }
 
-    .buttons__next {
+    .button__next {
         position: inherit;
         right: 10%;
     }
@@ -249,8 +249,8 @@
         width: 100%;
     }
 
-    .buttons__prev,
-    .buttons__next {
+    .button__prev,
+    .button__next {
         background-color: var(--carousel-indicators-color);
         border-radius: 50%;
         width: 30px;
@@ -258,12 +258,12 @@
         border: none;
     }
 
-    .buttons__prev {
+    .button__prev {
         position: inherit;
         left: 10%;
     }
 
-    .buttons__next {
+    .button__next {
         position: inherit;
         right: 10%;
     }
@@ -329,12 +329,12 @@
         width: 100%;
     }
 
-    .buttons__prev {
+    .button__prev {
         position: inherit;
         left: 5%;
     }
 
-    .buttons__next {
+    .button__next {
         position: inherit;
         right: 5%;
     }
@@ -447,12 +447,12 @@
         width: 100%;
     }
 
-    .buttons__prev {
+    .button__prev {
         position: inherit;
         left: 5%;
     }
 
-    .buttons__next {
+    .button__next {
         position: inherit;
         right: 5%;
     }
@@ -572,8 +572,8 @@
         font-weight: 400;
     }
 
-    .buttons__prev,
-    .buttons__next {
+    .button__prev,
+    .button__next {
         background-color: var(--carousel-indicators-color);
         border-radius: 50%;
         width: 25px;
@@ -581,12 +581,12 @@
         border: none;
     }
 
-    .buttons__prev {
+    .button__prev {
         position: inherit;
         left: 1%;
     }
 
-    .buttons__next {
+    .button__next {
         position: inherit;
         right: 1%;
     }
