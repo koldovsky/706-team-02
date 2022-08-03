@@ -1,5 +1,5 @@
 @import url(common.css);
-@import url(testimonials-contacts.css);
+@import url(contacts.css);
 @import url(blog.css);
 @import url(footer.css);
 @import url(schedule.css);
@@ -13,5 +13,6 @@
 @import url(first-page-blog.css);
 @import url(upbutton.css);
 @import url(block-name.css);
+@import url(testimonials.css);
 
 /* finished*/

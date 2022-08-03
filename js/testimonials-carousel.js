@@ -1,7 +1,21 @@
 (function () {
     const dots = document.getElementsByClassName("testimonials__dots");
     const slides = document.getElementById("testimonials__slides");
+
     let activeIndex = 0;
+
+    let windowWidth;
+    if (window.matchMedia("(min-width: 1080px)").matches) {
+        windowWidth = 800;
+    } else if (window.matchMedia("(min-width: 800px)").matches) {
+        windowWidth = 600;
+    } else if (window.matchMedia("(min-width: 600px)").matches) {
+        windowWidth = 500;
+    } else if (window.matchMedia("(min-width: 500px)").matches) {
+        windowWidth = 400;
+    } else {
+        windowWidth = 300;
+    }
 
     function showSlide(idx) {
         console.log("showSlide index = " + idx);
@@ -10,7 +24,7 @@
         }
         activeIndex = idx;
         dots[idx].classList.add("active");
-        slides.style.transform = `translateX(${-idx * 800}px)`;
+        slides.style.transform = `translateX(${-idx * windowWidth}px)`;
     }
 
     for (let i = 0; i < dots.length; i++) {
