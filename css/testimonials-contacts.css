@@ -59,7 +59,7 @@
 .slideshow-container__slide-one,
 .slideshow-container__slide-two,
 .slideshow-container__slide-three {
-    width: 800px;
+    max-width: 800px;
     position: relative;
 
 }
