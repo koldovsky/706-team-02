@@ -72,5 +72,5 @@ header__button-one {
   text-align: center;
   font-size: 0.875rem;
   font-family: 'Roboto', sans-serif;
-  color: var(--subtitle-text-color1);
+  color: var(--input-border-color);
 }
