@@ -1,3 +1,4 @@
+
 .pricing {
 	background-color: var(--background-color);
 	padding: 50px 0 100px;
@@ -45,10 +46,25 @@
 	justify-content: center;
 	list-style: none;
 	margin-top: 60px;
+	flex-wrap: wrap;
 }
+
 .pricing-list > li {
 	padding: 0 15px;
 	display: flex;
+	width: 100%;
+}
+
+@media (min-width: 480px) {
+	.pricing-list > li {
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.pricing-list > li {
+		width: 33%;
+	}
 }
 
 .pricing-item {
@@ -58,6 +74,7 @@
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 .pricing-item-title {
