@@ -1,76 +1,11 @@
 .header {
-  min-height: 1200px;
-  padding: 0 0 180px;
+  padding: 30px 0;
   background: url(../img/header__man-woman.png) center center/ cover no-repeat;
 }
-@media (min-width: 766px) {
-  .container {
-      display: flex;
-      margin-left: 4%;
-      padding: 50px 0 25px 0;
-  }
-}
-div.container {
+.header__block {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10 10px 0 0px;
+  margin: 0 15px;
 }
-.header__menu {
-  padding: 0;
-}
-.header__icons {
-  position: absolute;
-  padding-left: 85%;
-}
-.header__navbar a {
-  color: var(--subtitle-text-color1);
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  margin: 35px;
-  font-size: 1.5em;
-  }
+.container {
 
-
-
-  .header__title {
-    margin-top: 10%;
-  }
-   
-.header__title a {
-    margin-top: 15px;
-    display: block;
-    width: 240px;
-    padding: 18px 6px;
-    background: var(--background-button-color);
-    color: var(--subtitle-text-color1);
-    text-decoration: none;
-}
-
-.header__title a:hover {
-    color: var(--subtitle-text-color1);
-    background: #333;
-    transition: all 0.3s linear;
-    --webkit-transition: all 0.3s linear;
-    --moz-transition: all 0.3s linear;
-}
-.header__title-subtitle {
-  font-family: 'Homemade Apple';
-  font-size: 26px;
-  color: var(--brand-color);
-}
-
-.header__title-left {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 120px;
-  color: var(--subtitle-text-color1);
-}
-
-
-header__button-one {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 0.875rem;
-  font-family: 'Roboto', sans-serif;
-  color: var(--input-border-color);
 }
