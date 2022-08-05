@@ -1,6 +1,7 @@
 .header {
   padding: 30px 0;
-  background: url(../img/header__man-woman.png) center center/ cover no-repeat;
+  background: url(../img/header__man-woman.png) center center no-repeat;
+  background-size: cover;
 }
 
 .header__block {
@@ -10,10 +11,108 @@
 }
 
 .container {
+  display: flex;  
+}
+
+.header__top {
   display: flex;
-  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
 }
 
 .header__menu, .header__icons {
   display: none;
+}
+
+.burger{
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.burger span{
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  width: 20px ;
+  border-radius:3px;
+  transition: .4s;
+  position: absolute;
+  top: 9px;
+}
+.burger::before{
+  content:'';
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  width: 20px ;
+  border-radius:3px;
+  position: absolute;
+  top: 0;
+}
+.burger::after{
+  content:'';
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  width: 20px ;
+  border-radius:3px;
+  position: absolute;
+  bottom: 0;
+}
+
+.burger.active::before{
+  transition: .4s;
+  transform: rotate(315deg);
+  top: 9px;
+}
+.burger.active::after{
+  transition: .4s;
+  transform: rotate(-135deg);
+  top: 9px;
+}
+
+.active span{
+  transition: .4s;
+  display: none ;
+}
+
+.header__title {
+  display: flex;
+  flex-flow: column;
+  margin: 300px 0;
+}
+
+.header__title-subtitle {
+  font-family: 'Homemade Apple';
+  font-size: 14px;
+  color: var(--brand-color);
+}
+
+.header__title-left span {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 60px;
+  color: var(--subtitle-text-color1);
+}
+
+h1 {
+  margin: 20px 0;
+} 
+
+.header__button-one {
+  width: 200px;
+  background-color: var(--brand-color);
+  padding: 15px 0;
+  border: none;
+  color: var(--subtitle-text-color1);
+  text-transform: uppercase;
+}
+
+.header__button-one:hover {
+  background-color: var(--subtitle-text-color1);
+  color: var(--subtitle-text-color2);
+  transition: 0.4s;
+  cursor: pointer;
 }
