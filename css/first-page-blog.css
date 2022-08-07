@@ -34,7 +34,7 @@
     
 }
 .blog-first-img {
-    width: 350px;
+    width: 370px;
     height: 450px;
 }
 
@@ -47,48 +47,43 @@
 
 .first-image-data {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 250px;
+    left: 20px;
     color: white;
-    padding-top: 250px ;
-    padding-left: 20px;
     font-weight: bold;
     font-size: larger;
     margin: auto;
 }
 .first-image-second-text {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 280px;
+    left: 20px;
     color: white;
     font-weight: bold;
-    padding-top: 300px;
-    padding-left: 20px;
     font-size: x-large;
 }
 .read-more-href {
     position: absolute;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    
+    bottom: 30px;
+    left: 20px;
     color: white;
     font-weight: bold;
-    padding-left: 20px;
+    
     font-size: normal;
-    padding-bottom: 30px;
-    padding-left: 20px;
+    
+    
 }
 
 .new-paragraph-special {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 80px;
+    left: 20px;
     color: white;
     font-weight: bold;
-    padding-top: 330px;
-    padding-left: 20px;
+    
     font-size: x-large;
-    padding-bottom: 80px;
+    
 }
 
 
@@ -170,12 +165,13 @@
 
 
 .third-image-data {
+    display: inline-block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 250px;
+    left: 20px;
     color: white;
-    padding-top: 250px ;
-    padding-left: 20px;
+    
+    
     font-weight: bold;
     font-size: larger;
     margin: auto;
@@ -214,3 +210,29 @@
     padding-top: 200px;
     
 }
+
+
+.hover-underline-animation {
+    display: inline-block;
+
+    color: 
+  #fff;
+}
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
