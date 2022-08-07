@@ -38,6 +38,7 @@ div.block-name aside.meet__block-name {
 .meetcoacher-block {
     display: flex;
     height: 600px;
+    margin-top: 60px;
 }
  
 .meetcoacher-tom {

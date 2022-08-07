@@ -2,736 +2,765 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boxing School</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing School</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
 
-  <!-- Danylenko Vitalii BLOCK-1 header-->
+<!-- Danylenko Vitalii BLOCK-1 header-->
 
-  <header id="home" class="header">
+<header id="home" class="header">
     <div class="header__block">
-      <div class="container">
-        <div class="header__top">
-          <div class="header__top-content">
-            <a class="header__logo" href="index.html"><img width="126" class="logo" src="img/logo.svg" alt="logo"></a>
-          </div>          
+        <div class="container container-menu">
+            <div class="header__top">
+                <div class="header__top-content">
+                    <a class="header__logo" href="index.html">
+                        <img width="126" class="logo" src="img/logo.svg" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header__menu">
+                <nav class="header__navbar" id="menu">
+                    <a class="menu__link" href="#about-us">About us</a>
+                    <a class="menu__link" href="#classes">Classes</a>
+                    <a class="menu__link" href="#pricing">Pricing</a>
+                    <a class="menu__link" href="#testimonials">Testimonials</a>
+                    <a class="menu__link" href="#contacts">Contacts</a>
+                </nav>
+            </div>
+            <div class="header__icons">
+                <a href="https://www.youtube.com">
+                    <img width="24" class="youtube" src="img/youtube.png" alt="youtube">
+                </a>
+                <a href="https://instagram.com">
+                    <img width="24" class="instagram" src="img/instagram.png" alt="instagram">
+                </a>
+                <a href="https://facebook.com">
+                    <img width="24" class="facebook" src="img/facebook.png" alt="facebook">
+                </a>
+            </div>
+            <div class="burger" onclick="burgerClick()">
+                <span></span>
+            </div>
+            <div class="burger__menu">
+                <div class="burger-header__menu">
+                    <nav class="burger-header__navbar">
+                        <a class="menu__link" onclick="burgerChange()" href="#about-us">About us</a>
+                        <a class="menu__link" onclick="burgerChange()" href="#classes">Classes</a>
+                        <a class="menu__link" onclick="burgerChange()" href="#pricing">Pricing</a>
+                        <a class="menu__link" onclick="burgerChange()" href="#testimonials">Testimonials</a>
+                        <a class="menu__link" onclick="burgerChange()" href="#contacts">Contacts</a>
+                    </nav>
+                </div>
+                <div class="burger-header__icons">
+                    <a href="https://www.youtube.com">
+                        <img width="24" class="youtube" src="img/youtube.png" alt="youtube">
+                    </a>
+                    <a href="https://instagram.com">
+                        <img width="24" class="instagram" src="img/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://facebook.com">
+                        <img width="24" class="facebook" src="img/facebook.png" alt="facebook">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="header__menu">
-          <nav class="header__navbar" id="menu">
-            <a class="menu__link" href="#about-us">About us</a>
-            <a class="menu__link" href="#classes">Classes</a>
-            <a class="menu__link" href="#pricing">Pricing</a>
-            <a class="menu__link" href="#testimonials">Testimonials</a>
-            <a class="menu__link" href="#contacts">Contacts</a>
-          </nav>
+        <div class="header__title container">
+            <p class="header__title-subtitle">Become a champion at</p>
+            <h1 class="header__title-left">
+                <span>BOXING</span>
+                <span>SCHOOL</span>
+            </h1>
+            <button class="header__button-one" type="button" href="#contacts">free training!</button>
         </div>
-        <div class="header__icons">
-          <a href="https://www.youtube.com">
-            <img width="24" class="youtube" src="img/youtube.png" alt="youtube">
-          </a>
-          <a href="https://instagram.com">
-            <img width="24" class="instagram" src="img/instagram.png" alt="instagram">
-          </a>
-          <a href="https://facebook.com">
-            <img width="24" class="facebook" src="img/facebook.png" alt="facebook">
-          </a>
-        </div>
-        <div class="burger">
-          <span></span>
-        </div>
-        <div class="burger__menu">
-           <div class="burger-header__menu">
-          <nav class="burger-header__navbar" id="menu">
-            <a class="menu__link" href="#about-us">About us</a>
-            <a class="menu__link" href="#classes">Classes</a>
-            <a class="menu__link" href="#pricing">Pricing</a>
-            <a class="menu__link" href="#testimonials">Testimonials</a>
-            <a class="menu__link" href="#contacts">Contacts</a>
-          </nav>
-        </div>
-        <div class="burger-header__icons">
-          <a href="https://www.youtube.com">
-            <img width="24" class="youtube" src="img/youtube.png" alt="youtube">
-          </a>
-          <a href="https://instagram.com">
-            <img width="24" class="instagram" src="img/instagram.png" alt="instagram">
-          </a>
-          <a href="https://facebook.com">
-            <img width="24" class="facebook" src="img/facebook.png" alt="facebook">
-          </a>
-        </div>
-        </div>
-      </div>
-      <div class="header__title">
-        <p class="header__title-subtitle">Become a champion at</p>
-        <h1 class="header__title-left"> <span>BOXING</span>
-          <span>SCHOOL</span>
-        </h1>
-        <button class="header__button-one" type="button" href="#contacts">free training!</button>
-      </div>
     </div>
-  </header>
-  <!-- end BLOCK-1 header-->
+</header>
+<!-- end BLOCK-1 header-->
 
-  <!--Upbutton Yevhen-->
-  <div className="scroll-to-top">
-    <span class="btn btn-position btn-style">^</i>
-  </div>
+<!--Upbutton Yevhen-->
+<div className="scroll-to-top">
+    <span class="btn btn-position btn-style">^</span>
+</div>
 
-  <main>
+<main>
     <!--Dmitry Degtyarev BLOCK-2-->
     <div class="main__services">
-      <article class="services__card services__card-man">
-        <div class="card__inner">
-          <h2 class="card__title">ADULTS</h2>
-          <div class="divider"></div>
-          <p class="card__subtitle">Learn how to box at our school.<br>Sign up for a trial training!</p>
-          <a href="#">
-            <p class="card__button-text">learn more ➟</p>
-          </a>
-        </div>
-      </article>
-      <article class="services__card services__card-child">
-        <div class="card__inner">
-          <h2 class="card__title">CHILDREN</h2>
-          <div class="divider"></div>
-          <p class="card__subtitle">Your child will be strong, sturdy,<br>and awaiting training eagerly.</p>
-          <a href="#">
-            <p class="card__button-text">learn more ➟</p>
-          </a>
-        </div>
-      </article>
-      <article class="services__card services__card-woman">
-        <div class="card__inner">
-          <h2 class="card__title">SELF-DEFENCE</h2>
-          <div class="divider"></div>
-          <p class="card__subtitle">The ability to defend yourself<br>will never be superfluous.</p>
-          <a href="#">
-            <p class="card__button-text">learn more ➟</p>
-          </a>
-        </div>
-      </article>
+        <article class="services__card services__card-man">
+            <div class="card__inner">
+                <h2 class="card__title">ADULTS</h2>
+                <div class="divider"></div>
+                <p class="card__subtitle">Learn how to box at our school.<br>Sign up for a trial training!</p>
+                <a href="#">
+                    <p class="card__button-text">learn more ➟</p>
+                </a>
+            </div>
+        </article>
+        <article class="services__card services__card-child">
+            <div class="card__inner">
+                <h2 class="card__title">CHILDREN</h2>
+                <div class="divider"></div>
+                <p class="card__subtitle">Your child will be strong, sturdy,<br>and awaiting training eagerly.</p>
+                <a href="#">
+                    <p class="card__button-text">learn more ➟</p>
+                </a>
+            </div>
+        </article>
+        <article class="services__card services__card-woman">
+            <div class="card__inner">
+                <h2 class="card__title">SELF-DEFENCE</h2>
+                <div class="divider"></div>
+                <p class="card__subtitle">The ability to defend yourself<br>will never be superfluous.</p>
+                <a href="#">
+                    <p class="card__button-text">learn more ➟</p>
+                </a>
+            </div>
+        </article>
     </div>
     <!--end BLOCK-2-->
 
     <!-- Drobot Rostyslav block 3 About US -->
     <section class="main__about-us" id="about-us">
-      <div class="main__about-us_photo">
-        <img src="img/gymside.png" alt="A Man and Women smiling in the Gym" class="about-us__photo">
-      </div>
-      <div class="main__about-us-inner">
-        <h2 class="about-us__title">About Us</h2>
-        <h3 class="about-us__subtitle">PROFESSIONAL BOXING SCHOOL</h3>
-        <p class="about-us__information"><span class="about-us__text-context">Our boxing school offers training for
+        <div class="main__about-us_photo">
+            <img src="img/gymside.png" alt="A Man and Women smiling in the Gym" class="about-us__photo">
+        </div>
+        <div class="main__about-us-inner">
+            <h2 class="about-us__title">About Us</h2>
+            <h3 class="about-us__subtitle">PROFESSIONAL BOXING SCHOOL</h3>
+            <p class="about-us__information"><span class="about-us__text-context">Our boxing school offers training for
             amateurs and professionals. If you are looking for a way to defend yourself, we will teach you how to dump
             anyone with one kick. If you want to get in shape, boxing is the perfect combination of strength and cardio
             workouts. Our school has the best trainers in New York to help you become a really gifted boxer.</span></p>
-      </div>
-      <div class="about-us__subtext-container">
-        <div class="about-us__media-content_one">
-          <div class="about-us__container_one">
-            <img src="img/punch.svg" alt="A Man Punching a Pear" class="about-us__container_one_photo">
-          </div>
-          <div class="about-us__container_one_title">
-            <p class="container__one_title">Effective workouts</p>
-          </div>
-          <div class="about-us__container_one_subtitle">
-            <p class="container-one__subtitle">We offer a universal program for adults and children that will help you
-              keep fit.</p>
-          </div>
         </div>
-        <div class="about-us__media-content_two">
-          <div class="about-us__container_two">
-            <img src="img/gloves.svg" alt="Boxing Gloves" class="about-us__container_two_photo">
-          </div>
-          <div class="about-us__container_two_title">
-            <p class="container__two_title">Proper kicks</p>
-          </div>
-          <div class="about-us__container_two_subtitle">
-            <p class="container__two_subtitle">We will teach you how to throw kicks properly, and what are the most
-              effective places to kick.</p>
-          </div>
+        <div class="about-us__subtext-container">
+            <div class="about-us__media-content_one">
+                <div class="about-us__container_one">
+                    <img src="img/punch.svg" alt="A Man Punching a Pear" class="about-us__container_one_photo">
+                </div>
+                <div class="about-us__container_one_title">
+                    <p class="container__one_title">Effective workouts</p>
+                </div>
+                <div class="about-us__container_one_subtitle">
+                    <p class="container-one__subtitle">We offer a universal program for adults and children that will
+                        help you
+                        keep fit.</p>
+                </div>
+            </div>
+            <div class="about-us__media-content_two">
+                <div class="about-us__container_two">
+                    <img src="img/gloves.svg" alt="Boxing Gloves" class="about-us__container_two_photo">
+                </div>
+                <div class="about-us__container_two_title">
+                    <p class="container__two_title">Proper kicks</p>
+                </div>
+                <div class="about-us__container_two_subtitle">
+                    <p class="container__two_subtitle">We will teach you how to throw kicks properly, and what are the
+                        most
+                        effective places to kick.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- end Block 3-->
 
     <!-- Viktoriia Hromova block 4 Training-->
     <section class="training" id="classes">
-      <div class="training-content">
-        <h2 class="training-title">Training</h2>
-        <h3 class="training-sub-title">Join our classes</h3>
-        <p class="training-description">Choose any class and start boxing from the very first training!</p>
-        <ul class="training-list" id="lightSlider">
-          <li>
-            <div class="training-class adults">
-              <h4 class="training-item-title">For adults</h4>
-              <div class="training-class-price">from <b>$55</b></div>
-              <p class="training-class-description">We can teach beginners and help experienced and professional boxers
-                adjust their techniques.</p>
-              <button class="training-class-sign-up" type="button">sign up</button>
-            </div>
-          </li>
-          <li>
-            <div class="training-class children">
-              <h4 class="training-item-title">For children</h4>
-              <div class="training-class-price">from <b>$35</b></div>
-              <p class="training-class-description">Our boxing school offers several effective boxing training programs
-                for children of different ages.</p>
-              <button class="training-class-sign-up" type="button">sign up</button>
-            </div>
-          </li>
-          <li>
-            <div class="training-class female-boxing">
-              <h4 class="training-item-title">Female boxing</h4>
-              <div class="training-class-price">from<b>$55</b></div>
-              <p class="training-class-description">
-                We offer the best boxing training program for women in New York. Work on your strength!
-              </p>
-              <button class="training-class-sign-up" type="button">sign up</button>
-            </div>
-          </li>
-          <li>
-            <div class="training-class kickboxing">
-              <h4 class="training-item-title">Kickboxing</h4>
-              <div class="training-class-price">from <b>$65</b></div>
-              <p class="training-class-description"> We have not only boxing classes but also kickboxing groups where
-                kicks are thrown with legs, too.</p>
-              <button class="training-class-sign-up" type="button">sign up</button>
-            </div>
-          </li>
-          <li>
-            <div class="training-class self-defence">
-              <h4 class="training-item-title">Self-deference</h4>
-              <div class="training-class-price">from <b>$75</b></div>
-              <p class="training-class-description"> Our experienced trainers will teach you self-defense techniques
-                that
-                can truly save your life one day.</p>
-              <button class="training-class-sign-up" type="button">sign up</button>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <div class="training-content">
+            <h2 class="training-title">Training</h2>
+            <h3 class="training-sub-title">Join our classes</h3>
+            <p class="training-description">Choose any class and start boxing from the very first training!</p>
+            <ul class="training-list" id="lightSlider">
+                <li>
+                    <div class="training-class adults">
+                        <h4 class="training-item-title">For adults</h4>
+                        <div class="training-class-price">from <b>$55</b></div>
+                        <p class="training-class-description">We can teach beginners and help experienced and
+                            professional boxers
+                            adjust their techniques.</p>
+                        <button class="training-class-sign-up" type="button">sign up</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="training-class children">
+                        <h4 class="training-item-title">For children</h4>
+                        <div class="training-class-price">from <b>$35</b></div>
+                        <p class="training-class-description">Our boxing school offers several effective boxing training
+                            programs
+                            for children of different ages.</p>
+                        <button class="training-class-sign-up" type="button">sign up</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="training-class female-boxing">
+                        <h4 class="training-item-title">Female boxing</h4>
+                        <div class="training-class-price">from<b>$55</b></div>
+                        <p class="training-class-description">
+                            We offer the best boxing training program for women in New York. Work on your strength!
+                        </p>
+                        <button class="training-class-sign-up" type="button">sign up</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="training-class kickboxing">
+                        <h4 class="training-item-title">Kickboxing</h4>
+                        <div class="training-class-price">from <b>$65</b></div>
+                        <p class="training-class-description"> We have not only boxing classes but also kickboxing
+                            groups where
+                            kicks are thrown with legs, too.</p>
+                        <button class="training-class-sign-up" type="button">sign up</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="training-class self-defence">
+                        <h4 class="training-item-title">Self-deference</h4>
+                        <div class="training-class-price">from <b>$75</b></div>
+                        <p class="training-class-description"> Our experienced trainers will teach you self-defense
+                            techniques
+                            that
+                            can truly save your life one day.</p>
+                        <button class="training-class-sign-up" type="button">sign up</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
     <!--end BLOCK-4-->
 
     <!-- Holoshivskyi Maksym start of the BLOCK 5-->
     <div class="main__advantage">
-      <div class="advantage__program">
-        <div class="program__icon">
-          <img width="70px" src="img/boxing-glove.svg" alt="icon of boxing glove in a calendar">
+        <div class="advantage__program">
+            <div class="program__icon">
+                <img width="70px" src="img/boxing-glove.svg" alt="icon of boxing glove in a calendar">
+            </div>
+            <div class="program__text">
+                <h3 class="program__text-header">PROGRAM</h3>
+                <p class="program__text-description">Our coaches have developed a unique training methodology. In just a
+                    few
+                    months, you
+                    will see the result.</p>
+            </div>
         </div>
-        <div class="program__text">
-          <h3 class="program__text-header">PROGRAM</h3>
-          <p class="program__text-description">Our coaches have developed a unique training methodology. In just a few
-            months, you
-            will see the result.</p>
-        </div>
-      </div>
 
-      <div class="advantage__technique">
-        <div class="technique__icon">
-          <img width="46" src="img/punching-bag.svg" alt="punching bag icon">
+        <div class="advantage__technique">
+            <div class="technique__icon">
+                <img width="46" src="img/punching-bag.svg" alt="punching bag icon">
+            </div>
+            <div class="technique__text">
+                <h3 class="technique__text-header">TECHNIQUES</h3>
+                <p class="technique__text-description">The trainers of our school will teach you how to throw kicks
+                    correctly. You will learn techniques of attack
+                    and defense. </p>
+            </div>
         </div>
-        <div class="technique__text">
-          <h3 class="technique__text-header">TECHNIQUES</h3>
-          <p class="technique__text-description">The trainers of our school will teach you how to throw kicks
-            correctly. You will learn techniques of attack
-            and defense. </p>
+        <div class="advantage__success">
+            <div class="success__icon">
+                <img width="70" src="img/boxing-gloves.svg" alt="two hanging gloves">
+            </div>
+            <div class="success__text">
+                <h3 class="success__text-header">SUCCESS</h3>
+                <p class="success__text-description">In our school, you will not only learn how to throw kicks
+                    effectively
+                    but also how to get in shape and gain strength.</p>
+            </div>
         </div>
-      </div>
-      <div class="advantage__success">
-        <div class="success__icon">
-          <img width="70" src="img/boxing-gloves.svg" alt="two hanging gloves">
-        </div>
-        <div class="success__text">
-          <h3 class="success__text-header">SUCCESS</h3>
-          <p class="success__text-description">In our school, you will not only learn how to throw kicks effectively
-            but also how to get in shape and gain strength.</p>
-        </div>
-      </div>
     </div>
     <!--end of the block5-->
 
     <!-- block #8 start Yevhen-->
     <section class="schedule">
-      <h2 class="schedule__h2">
-        Schedule
-      </h2>
-      <aside class="schedule__title">CHOOSE A CLASS</aside>
-      <div class="schedule__title-divider"></div>
+        <h2 class="schedule__h2">
+            Schedule
+        </h2>
+        <aside class="schedule__title">CHOOSE A CLASS</aside>
+        <div class="schedule__title-divider"></div>
 
-      <table class="schedule__table">
-        <tbody class="schedule__table-body">
-          <tr class="schedule__table-cols">
-            <th>Days</th>
-            <th>Time</th>
-            <th>Class</th>
-            <th>Coach</th>
-          </tr>
-          <tr>
-            <td class="schedule__rows-day">Monday</td>
-            <td>6:30 pm - 7:30 pm<br>
-              7:45 pm - 8:45 pm</td>
-            <td>Adults Group A<br>
-              Kickboxing</td>
-            <td>Tom Bellson<br>
-              Daniel Jackson</td>
-          </tr>
-          <tr>
-            <td class="schedule__rows-day">Tuesday</td>
-            <td>6:30 pm - 7:30 pm<br>
-              7:45 pm - 8:45 pm<br>
-              9:00 pm - 10:00 pm</td>
-            <td>Female Boxing<br>
-              Children Group A<br>
-              Adults Group B</td>
-            <td>Susan Hooler<br>
-              Tom Bellson<br>
-              Daniel Jackson</td>
-          </tr>
-          <tr>
-            <td class="schedule__rows-day">Wednesday</td>
-            <td>6:30 pm - 7:30 pm</td>
-            <td>Children Group B</td>
-            <td>Susan Hooler</td>
-          </tr>
-          <tr>
-            <td class="schedule__rows-day">Thursday</td>
-            <td>6:30 pm - 7:30 pm<br>
-              7:45 pm - 8:45 pm</td>
-            <td>Self-defense<br>
-              Adults Group A
-            </td>
-            <td>Susan Hooler<br>
-              Tom Bellson
-            </td>
-          </tr>
-          <tr>
-            <td class="schedule__rows-day">Friday</td>
-            <td>6:30 pm - 7:30 pm<br>
-              7:45 pm - 8:45 pm<br>
-              9:00 pm - 10:00 pm
-            </td>
-            <td>Female Boxing<br>
-              Adults Group B<br>
-              Self-defense</td>
-            <td>Susan Hooler<br>
-              Daniel Jackson<br>
-              Susan Hooler</td>
-          </tr>
-          <tr>
-            <td class="schedule__rows-day">Saturday</td>
-            <td>6:30 pm - 7:30 pm<br>
-              7:45 pm - 8:45 pm<br>
-              9:00 pm - 10:00 pm</td>
-            <td>Children Group A<br>
-              Kickboxing<br>
-              Children Group B
-            </td>
-            <td>Tom Bellson<br>
-              Daniel Jackson<br>
-              Susan Hooler</td>
-          </tr>
-          <tr>
-            <td class="schedule__rows-day">Sunday</td>
-            <td>6:30 pm - 7:30 pm</td>
-            <td>Self-defense</td>
-            <td>Susan Hooler</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="schedule__table">
+            <tbody class="schedule__table-body">
+            <tr class="schedule__table-cols">
+                <th>Days</th>
+                <th>Time</th>
+                <th>Class</th>
+                <th>Coach</th>
+            </tr>
+            <tr>
+                <td class="schedule__rows-day">Monday</td>
+                <td>6:30 pm - 7:30 pm<br>
+                    7:45 pm - 8:45 pm
+                </td>
+                <td>Adults Group A<br>
+                    Kickboxing
+                </td>
+                <td>Tom Bellson<br>
+                    Daniel Jackson
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule__rows-day">Tuesday</td>
+                <td>6:30 pm - 7:30 pm<br>
+                    7:45 pm - 8:45 pm<br>
+                    9:00 pm - 10:00 pm
+                </td>
+                <td>Female Boxing<br>
+                    Children Group A<br>
+                    Adults Group B
+                </td>
+                <td>Susan Hooler<br>
+                    Tom Bellson<br>
+                    Daniel Jackson
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule__rows-day">Wednesday</td>
+                <td>6:30 pm - 7:30 pm</td>
+                <td>Children Group B</td>
+                <td>Susan Hooler</td>
+            </tr>
+            <tr>
+                <td class="schedule__rows-day">Thursday</td>
+                <td>6:30 pm - 7:30 pm<br>
+                    7:45 pm - 8:45 pm
+                </td>
+                <td>Self-defense<br>
+                    Adults Group A
+                </td>
+                <td>Susan Hooler<br>
+                    Tom Bellson
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule__rows-day">Friday</td>
+                <td>6:30 pm - 7:30 pm<br>
+                    7:45 pm - 8:45 pm<br>
+                    9:00 pm - 10:00 pm
+                </td>
+                <td>Female Boxing<br>
+                    Adults Group B<br>
+                    Self-defense
+                </td>
+                <td>Susan Hooler<br>
+                    Daniel Jackson<br>
+                    Susan Hooler
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule__rows-day">Saturday</td>
+                <td>6:30 pm - 7:30 pm<br>
+                    7:45 pm - 8:45 pm<br>
+                    9:00 pm - 10:00 pm
+                </td>
+                <td>Children Group A<br>
+                    Kickboxing<br>
+                    Children Group B
+                </td>
+                <td>Tom Bellson<br>
+                    Daniel Jackson<br>
+                    Susan Hooler
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule__rows-day">Sunday</td>
+                <td>6:30 pm - 7:30 pm</td>
+                <td>Self-defense</td>
+                <td>Susan Hooler</td>
+            </tr>
+            </tbody>
+        </table>
     </section>
     <!--block #8 end-->
 
     <!-- Danylenko Vitalii BLOCK-9 -->
     <div class="block-team">
-      <div class="block-team">
-        <div class="block-name">
-          <h2 class="team__block-name">Team</h2>
-          <aside class="meet__block-name">MEET OUR COACHES</aside>
-          <div class=blok-name__divider"> </div>
+        <div class="block-team">
+            <div class="block-name">
+                <h2 class="team__block-name">Team</h2>
+                <aside class="meet__block-name">MEET OUR COACHES</aside>
+                <div class="schedule__title-divider"></div>
+            </div>
+            <div class="meetcoacher container">
+                <article class="meetcoacher-block">
+                    <div class="meetcoacher-tom">
+                        <h3 class="coache">Tom Bellson</h3>
+                        <p class="coache-tom">Tom is a boxer with a rich professional background. He is a WWDC champion
+                            of 2005,
+                            2007, and 2010. Now he trains adults and children with great pleasure.</p>
+                    </div>
+                    <div class="meetcoacher-susan">
+                        <h3 class="coache">Susan Hooler</h3>
+                        <p class="coache-susan">Susan is one of the most experienced female boxing trainers, and a
+                            worldwide
+                            champion.
+                            Now she coaches self-defense, children, and female boxing groups.</p>
+                    </div>
+                    <div class="meetcoacher-daniel">
+                        <h3 class="coache">Daniel Jackson</h3>
+                        <p class="coache-baniel">Daniel has had an extensive kickboxing career, and now he is one of the
+                            most
+                            experiences coaches in our school. He coaches kickboxing and adult groups.</p>
+                    </div>
+                </article>
+            </div>
         </div>
-        <div class="meetcoacher">
-          <article class="meetcoacher-block">
-            <div class="meetcoacher-tom">
-              <h3 class="coache">Tom Bellson</h3>
-              <p class="coache-tom">Tom is a boxer with a rich professional background. He is a WWDC champion of 2005,
-                2007, and 2010. Now he trains adults and children with great pleasure.</p>
-            </div>
-            <div class="meetcoacher-susan">
-              <h3 class="coache">Susan Hooler</h3>
-              <p class="coache-susan">Susan is one of the most experienced female boxing trainers, and a worldwide
-                champion.
-                Now she coaches self-defense, children, and female boxing groups.</p>
-            </div>
-            <div class="meetcoacher-daniel">
-              <h3 class="coache">Daniel Jackson</h3>
-              <p class="coache-baniel">Daniel has had an extensive kickboxing career, and now he is one of the most
-                experiences coaches in our school. He coaches kickboxing and adult groups.</p>
-            </div>
-          </article>
-        </div>
-      </div>
     </div>
     <!--end of the block9-->
 
     <!-- Viktoriia Hromova block 12 Pricing-->
     <section class="pricing" id="pricing">
-      <div class="pricing-content">
-        <h2 class="pricing-title">Pricing</h2>
-        <h3 class="pricing-sub-title">Choose your plan</h3>
-        <ul class="pricing-list">
-          <li>
-            <div class="pricing-item">
-              <h4 class="pricing-item-title">For beginners</h4>
-              <div class="pricing-item-price"><b>$35</b></div>
-              <p class="pricing-time">per month</p>
-              <ul class="pricing-item-list">
-                <li class="checked">2 classes per week</li>
-                <li class="un-checked">One Crossfit Workout</li>
-                <li class="un-checked">Sparring</li>
-                <li class="un-checked">Personal trainer</li>
-                <li class="checked">Individual meal plan</li>
-              </ul>
-              <button class="pricing-button" type="button">Select &rarr;</button>
-            </div>
-          </li>
-          <li>
-            <div class="pricing-item">
-              <h4 class="pricing-item-title">Advanced lessons</h4>
-              <div class="pricing-item-price"><b>$55</b></div>
-              <p class="pricing-time">per month</p>
-              <ul class="pricing-item-list">
-                <li class="checked">2 classes per week</li>
-                <li class="checked">One Crossfit Workout</li>
-                <li class="checked">Sparring</li>
-                <li class="un-checked">Personal trainer</li>
-                <li class="checked">Individual meal plan</li>
-              </ul>
-              <button class="pricing-button" type="button">Select &rarr;</button>
-            </div>
-          </li>
-          <li>
-            <div class="pricing-item">
-              <h4 class="pricing-item-title">For professionals</h4>
-              <div class="pricing-item-price"><b>$75</b></div>
-              <p class="pricing-time">per month</p>
-              <ul class="pricing-item-list">
-                <li class="checked">2 classes per week</li>
-                <li class="checked">One Crossfit Workout</li>
-                <li class="checked">Sparring</li>
-                <li class="checked">Personal trainer</li>
-                <li class="checked">Individual meal plan</li>
-              </ul>
-              <button class="pricing-button" type="button">Select &rarr;</button>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <div class="pricing-content">
+            <h2 class="pricing-title">Pricing</h2>
+            <h3 class="pricing-sub-title">Choose your plan</h3>
+            <ul class="pricing-list">
+                <li>
+                    <div class="pricing-item">
+                        <h4 class="pricing-item-title">For beginners</h4>
+                        <div class="pricing-item-price"><b>$35</b></div>
+                        <p class="pricing-time">per month</p>
+                        <ul class="pricing-item-list">
+                            <li class="checked">2 classes per week</li>
+                            <li class="un-checked">One Crossfit Workout</li>
+                            <li class="un-checked">Sparring</li>
+                            <li class="un-checked">Personal trainer</li>
+                            <li class="checked">Individual meal plan</li>
+                        </ul>
+                        <button class="pricing-button" type="button">Select &rarr;</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="pricing-item">
+                        <h4 class="pricing-item-title">Advanced lessons</h4>
+                        <div class="pricing-item-price"><b>$55</b></div>
+                        <p class="pricing-time">per month</p>
+                        <ul class="pricing-item-list">
+                            <li class="checked">2 classes per week</li>
+                            <li class="checked">One Crossfit Workout</li>
+                            <li class="checked">Sparring</li>
+                            <li class="un-checked">Personal trainer</li>
+                            <li class="checked">Individual meal plan</li>
+                        </ul>
+                        <button class="pricing-button" type="button">Select &rarr;</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="pricing-item">
+                        <h4 class="pricing-item-title">For professionals</h4>
+                        <div class="pricing-item-price"><b>$75</b></div>
+                        <p class="pricing-time">per month</p>
+                        <ul class="pricing-item-list">
+                            <li class="checked">2 classes per week</li>
+                            <li class="checked">One Crossfit Workout</li>
+                            <li class="checked">Sparring</li>
+                            <li class="checked">Personal trainer</li>
+                            <li class="checked">Individual meal plan</li>
+                        </ul>
+                        <button class="pricing-button" type="button">Select &rarr;</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
     <!--end of the block12-->
 
     <!--Degtyarev Dmitry Block-13-->
     <div class="freetrial">
-      <div class="freetrial__inner">
-        <h3 class="freetrial__title">Free Trial</h3>
-        <p class="freetrial__subtitle">Sign up now for a free trial training</p>
-        <center><a href="#" class="freetrial__button">
-            <p>Sign up</p>
-          </a></center>
-      </div>
-      <div class="freetrial__inner inner__emptiness"></div>
+        <div class="freetrial__inner">
+            <h3 class="freetrial__title">Free Trial</h3>
+            <p class="freetrial__subtitle">Sign up now for a free trial training</p>
+            <center><a href="#" class="freetrial__button">
+                <p>Sign up</p>
+            </a></center>
+        </div>
+        <div class="freetrial__inner inner__emptiness"></div>
     </div>
     <!--Degtyarev Dmitry Block-13-->
 
     <!--Lesia Derkach Block-14 Testimonials-->
     <section class="testimonials" id="testimonials">
-      <div class="testimonials__inner">
-        <h2 class="testimonials__title">Testimonials</h2>
-        <h3 class="testimonials__subtitle">OUR BOXERS ABOUT US</h3>
-        <!-- ::after >>-->
-        <p class="testimonials__introduction-phrase">These people below are not just our students, they are
-          our family.
-        </p>
-        <div class="testimonials__slideshow">
-          <br>
-          <div class="slideshow-container__dots">
-            <span class="testimonials__dots active"></span>
-            <span class="testimonials__dots"></span>
-            <span class="testimonials__dots"></span>
-          </div>
-          <div class="slideshow-container" id='testimonials__slides'>
-            <div class="slideshow-container__slide-one testimonials__slide carousel__item--visible">
-              <img class='slideshow-container__exponent-photo' alt="Photo of Lukas Peterson"
-                src="img\img-testimonials\lucas-peterson.webp">
-              <div class="slideshow-container__exponent-name">Lucas Peterson</div>
-              <div class="slideshow-container__social-icons">
-                <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
-                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-              </div>
-              <p class="slideshow-container__exponent-feedback"><q>I've never boxed before, my friend invited
-                  me
-                  to this
-                  school.
-                  And I had a
-                  lot of fun when
-                  training.
-                  Now I have been doing boxing for 2 years at this school and I am completely satisfied.
-                  It
-                  has really
-                  great and caring coaches.</q></p>
-              <div class="slideshow-container__date">
-                <p class='date__pub'>December 15, 2019</p>
-              </div>
-            </div>
-            <div class="slideshow-container__slide-two testimonials__slide">
-              <img class='slideshow-container__exponent-photo' alt='Photo of Jessica Edam'
-                src="img\img-testimonials\jessica-edam.webp">
-              <div class="slideshow-container__exponent-name">Jessica Edam</div>
-              <div class="slideshow-container__social-icons">
-                <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
-                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-              </div>
-              <p class="slideshow-container__exponent-feedback"><q>I decided to change school after I realized
-                  that
-                  training at the
-                  previous
-                  school did not work. My colleague advised me to choose this school, and I am completely
-                  happy
-                  with
-                  my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
-              <div class="slideshow-container__date">
-                <p class='date__pub'>March 02, 2020</p>
+        <div class="testimonials__inner">
+            <h2 class="testimonials__title">Testimonials</h2>
+            <h3 class="testimonials__subtitle">OUR BOXERS ABOUT US</h3>
+            <!-- ::after >>-->
+            <p class="testimonials__introduction-phrase">These people below are not just our students, they are
+                our family.
+            </p>
+            <div class="testimonials__slideshow">
+                <br>
+                <div class="slideshow-container__dots">
+                    <span class="testimonials__dots active"></span>
+                    <span class="testimonials__dots"></span>
+                    <span class="testimonials__dots"></span>
+                </div>
+                <div class="slideshow-container" id='testimonials__slides'>
+                    <div class="slideshow-container__slide-one testimonials__slide carousel__item--visible">
+                        <img class='slideshow-container__exponent-photo' alt="Photo of Lukas Peterson"
+                             src="img\img-testimonials\lucas-peterson.webp">
+                        <div class="slideshow-container__exponent-name">Lucas Peterson</div>
+                        <div class="slideshow-container__social-icons">
+                            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                        </div>
+                        <p class="slideshow-container__exponent-feedback"><q>I've never boxed before, my friend invited
+                            me
+                            to this
+                            school.
+                            And I had a
+                            lot of fun when
+                            training.
+                            Now I have been doing boxing for 2 years at this school and I am completely satisfied.
+                            It
+                            has really
+                            great and caring coaches.</q></p>
+                        <div class="slideshow-container__date">
+                            <p class='date__pub'>December 15, 2019</p>
+                        </div>
+                    </div>
+                    <div class="slideshow-container__slide-two testimonials__slide">
+                        <img class='slideshow-container__exponent-photo' alt='Photo of Jessica Edam'
+                             src="img\img-testimonials\jessica-edam.webp">
+                        <div class="slideshow-container__exponent-name">Jessica Edam</div>
+                        <div class="slideshow-container__social-icons">
+                            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                        </div>
+                        <p class="slideshow-container__exponent-feedback"><q>I decided to change school after I realized
+                            that
+                            training at the
+                            previous
+                            school did not work. My colleague advised me to choose this school, and I am completely
+                            happy
+                            with
+                            my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
+                        <div class="slideshow-container__date">
+                            <p class='date__pub'>March 02, 2020</p>
 
-              </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container__slide-three testimonials__slide">
+                        <img class='slideshow-container__exponent-photo' alt='Photo of Adriana Hoe'
+                             src="img\img-testimonials\adriana-hoe.webp">
+                        <div class="slideshow-container__exponent-name">Adriana Hoe</div>
+                        <div class="slideshow-container__social-icons">
+                            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                        </div>
+                        <p class="slideshow-container__exponent-feedback"><q>I decided to change school after I realized
+                            that
+                            training at the
+                            previous
+                            school did not work. My colleague advised me to choose this school, and I am completely
+                            happy
+                            with
+                            my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
+                        <div class="slideshow-container__date">
+                            <p class='date__pub'> September 02, 2020</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slideshow-container__slide-three testimonials__slide">
-              <img class='slideshow-container__exponent-photo' alt='Photo of Adriana Hoe'
-                src="img\img-testimonials\adriana-hoe.webp">
-              <div class="slideshow-container__exponent-name">Adriana Hoe</div>
-              <div class="slideshow-container__social-icons">
-                <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
-                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-              </div>
-              <p class="slideshow-container__exponent-feedback"><q>I decided to change school after I realized
-                  that
-                  training at the
-                  previous
-                  school did not work. My colleague advised me to choose this school, and I am completely
-                  happy
-                  with
-                  my choice. The program here is unique and I feel that I'm growing as a boxer.</q></p>
-              <div class="slideshow-container__date">
-                <p class='date__pub'> September 02, 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slideshow-container__buttons">
-          <button class="button__prev" aria-label="Previous slide"><span class="material-symbols-outlined">
+            <div class="slideshow-container__buttons">
+                <button class="button__prev" aria-label="Previous slide"><span class="material-symbols-outlined">
               arrow_back_ios
             </span></button>
-          <button class="button__next" aria-label="Next slide"><span class="material-symbols-outlined">
+                <button class="button__next" aria-label="Next slide"><span class="material-symbols-outlined">
               arrow_forward_ios
             </span></button>
+            </div>
         </div>
-      </div>
     </section>
     <!-- Dmytriiev Oleksandr -->
     <!-- Drobot Rostyslav-->
     <!--Block #15 Oleksandr -->
     <section class="blog-main">
-      <header class="blog-header">
-        <p class="blog-red-text">Blog</p>
-        <p class="blog-recent-news">RECENT BOXING NEWS</p>
-        <hr color="red" width="50px" class="blog-hr">
-        <p class="blog-header-last-text">Want to know more about boxing? Read our articles!</p>
-      </header>
+        <header class="blog-header">
+            <p class="blog-red-text">Blog</p>
+            <p class="blog-recent-news">RECENT BOXING NEWS</p>
+            <hr color="red" width="50px" class="blog-hr">
+            <p class="blog-header-last-text">Want to know more about boxing? Read our articles!</p>
+        </header>
 
-      <div class="blog-images">
+        <div class="blog-images">
 
-        <div class="first-image-container">
-          <img src="img/img-blog/blog-first-img.webp" alt="one girl boxing" class="blog-first-img">
+            <div class="first-image-container">
+                <img src="img/img-blog/blog-first-img.webp" alt="one girl boxing" class="blog-first-img">
 
-          <div>
+                <div>
             <span class="first-image-text">
               <p class="first-image-data">September 01, 2020</p>
               <h1 class="first-image-second-text">Why Is Boxing Effective for</h1>
               <p type="text" class="new-paragraph-special">Self-defence?</p>
               <a href="second-page-blog.html" class="read-more-href hover-underline-animation">READ MORE → </a>
             </span>
-          </div>
-        </div>
+                </div>
+            </div>
 
 
-        <div class="second-image-container">
-          <img src="img/img-blog/blog-second-img.webp" alt="two guys boxing" class="blog-second-img">
+            <div class="second-image-container">
+                <img src="img/img-blog/blog-second-img.webp" alt="two guys boxing" class="blog-second-img">
 
-          <div>
+                <div>
             <span class="second-image-text">
               <p class="second-image-data">July 21, 2020</p>
               <p class="second-image-second-text">Different Types of Kicks in</p>
               <p type="text" class="second-new-paragraph-special">Professional Boxing</p>
               <a href="second-page-blog.html" class="read-more-href hover-underline-animation">READ MORE → </a>
             </span>
-          </div>
-        </div>
+                </div>
+            </div>
 
 
-        <div class="second-image-container">
-          <img src="img/img-blog/blog-third-img.png" alt="two girls training" class="blog-third-img">
+            <div class="second-image-container">
+                <img src="img/img-blog/blog-third-img.png" alt="two girls training" class="blog-third-img">
 
-          <div>
+                <div>
             <span class="third-image-text">
               <p class="third-image-data">May 2, 2020</p>
               <p class="third-image-second-text">Why Is Strategic Thinking</p>
               <p type="text" class="third-new-paragraph-special">Important in Boxing?</p>
               <a href="second-page-blog.html" class="read-more-href hover-underline-animation">READ MORE → </a>
             </span>
-          </div>
+                </div>
+            </div>
+
+
         </div>
-
-
-
-      </div>
 
     </section>
 
 
     <section class="carousel">
-      <h1>here will be a carousel</h1>
+        <h1>here will be a carousel</h1>
     </section>
-  </main>
+</main>
 
-  <!--Block 17 Contacts Lesia Derkach-->
-  <section class="contacts" id="contacts">
+<!--Block 17 Contacts Lesia Derkach-->
+<section class="contacts" id="contacts">
     <div class="contacts__container">
-      <div class="contacts__container-inner">
-        <div class="contacts__content">
-          <div class='contacts__details'>
-            <div class='details__inner'>
-              <h2 class='contacts__title'>Contacts</h2>
-              <h3 class='contacts__subtitle'>ASK US ANYTHING</h3>
-              <!-- :after-->
-              <p class='contacts__introduction-phrase'>Feel free to contact us to ask any question
-                or
-                sign
-                up
-                for
-                a
-                lesson:</p>
-              <div class="contacts__address__details">
-                <div class="address-details__inner-address">
-                  <p class="contacts__text-address">Address</p>
-                  <p class="address">104-58 109th St, Jamaica,<br>NY 11419, USA<br> </p>
-                </div>
-                <div class="address-details__inner-contacts">
-                  <p class='contacts__text-contact'>Contacts</p>
-                  <p class="contacts__links"><a class="contacts__link" href="tel:+12345678900"
-                      data-action="phone">+1(234)567 89 00</a><br>
-                    <a class='contacts__link' href="mailto:boxingschool@email.com"
-                      data-action="email">boxingschool@email.com</a><br>
-                  </p>
-                </div>
-              </div>
-              <div class="contacts__map">
-                <iframe height=255" width="100%" style="border: 0;"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24191.718814806336!2d-74.02372153939248!3d40.71879024047483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592fd932c769%3A0x8a079779c9f08a65!2sHudson%20Boxing%20Gym!5e0!3m2!1sfr!2sge!4v1657216986865!5m2!1sfr!2sge"
-                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-
-            <div class="contacts__form">
-              <div class="form__inner">
-                <div class="inner__background">
-                  <form class="form" action="https://formspree.io/f/xbjbrrao" method="POST">
-                    <input class='form__user-name' type="text" placeholder="Enter your full name*" name="user-name"
-                      required>
-                    <input class='form__user-number' type="number" placeholder="Enter your phone number*"
-                      name="user-phone-number" required>
-                    <input class='form__user-email' type="email" placeholder="Enter your e-mail*" name="user-email"
-                      required>
-                    <div class="contacts__buttons">
-                      <div class="date-picker">
-                        <div class="selected-date"></div>
-                        <div class="dates">
-                          <div class="month">
-                            <div class="arrows prev-mth">&lt;</div>
-                            <div class="mth"></div>
-                            <div class="arrows next-mth">&gt;</div>
-                          </div>
-                          <div class="days"></div>
+        <div class="contacts__container-inner">
+            <div class="contacts__content">
+                <div class='contacts__details'>
+                    <div class='details__inner'>
+                        <h2 class='contacts__title'>Contacts</h2>
+                        <h3 class='contacts__subtitle'>ASK US ANYTHING</h3>
+                        <!-- :after-->
+                        <p class='contacts__introduction-phrase'>Feel free to contact us to ask any question
+                            or
+                            sign
+                            up
+                            for
+                            a
+                            lesson:</p>
+                        <div class="contacts__address__details">
+                            <div class="address-details__inner-address">
+                                <p class="contacts__text-address">Address</p>
+                                <p class="address">104-58 109th St, Jamaica,<br>NY 11419, USA<br></p>
+                            </div>
+                            <div class="address-details__inner-contacts">
+                                <p class='contacts__text-contact'>Contacts</p>
+                                <p class="contacts__links"><a class="contacts__link" href="tel:+12345678900"
+                                                              data-action="phone">+1(234)567 89 00</a><br>
+                                    <a class='contacts__link' href="mailto:boxingschool@email.com"
+                                       data-action="email">boxingschool@email.com</a><br>
+                                </p>
+                            </div>
                         </div>
-                        <img class='form__img-calendar' src="img\img-testimonials\calendar-month.svg">
-                      </div>
-                      <button class='form__button' type="submit" value="submit">SIGN UP FOR A
-                        FREE
-                        TRAINING
-                      </button>
+                        <div class="contacts__map">
+                            <iframe height=255" width="100%" style="border: 0;"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24191.718814806336!2d-74.02372153939248!3d40.71879024047483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592fd932c769%3A0x8a079779c9f08a65!2sHudson%20Boxing%20Gym!5e0!3m2!1sfr!2sge!4v1657216986865!5m2!1sfr!2sge"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!--Footer (Block #18 - Yevhen)-->
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__sidebar">
-        <div class="footer__sidebar-content">
-          <a href="/706-team-02/"><img width="126" class="logo" src="img/logo.svg" alt="logo" /></a>
+                    <div class="contacts__form">
+                        <div class="form__inner">
+                            <div class="inner__background">
+                                <form class="form" action="https://formspree.io/f/xbjbrrao" method="POST">
+                                    <input class='form__user-name' type="text" placeholder="Enter your full name*"
+                                           name="user-name"
+                                           required>
+                                    <input class='form__user-number' type="number"
+                                           placeholder="Enter your phone number*"
+                                           name="user-phone-number" required>
+                                    <input class='form__user-email' type="email" placeholder="Enter your e-mail*"
+                                           name="user-email"
+                                           required>
+                                    <div class="contacts__buttons">
+                                        <div class="date-picker">
+                                            <div class="selected-date"></div>
+                                            <div class="dates">
+                                                <div class="month">
+                                                    <div class="arrows prev-mth">&lt;</div>
+                                                    <div class="mth"></div>
+                                                    <div class="arrows next-mth">&gt;</div>
+                                                </div>
+                                                <div class="days"></div>
+                                            </div>
+                                            <img class='form__img-calendar'
+                                                 src="img\img-testimonials\calendar-month.svg">
+                                        </div>
+                                        <button class='form__button' type="submit" value="submit">SIGN UP FOR A
+                                            FREE
+                                            TRAINING
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="footer__row">
-        <nav class="footer__menu">
-          <a href="#about-us">About us</a>
-          <a href="#classes">Classes</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contacts" id="contacts">Contact us</a>
-        </nav>
-      </div>
+    </div>
+</section>
+
+<!--Footer (Block #18 - Yevhen)-->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__sidebar">
+            <div class="footer__sidebar-content">
+                <a href="/706-team-02/"><img width="126" class="logo" src="img/logo.svg" alt="logo"/></a>
+            </div>
+        </div>
+        <div class="footer__row">
+            <nav class="footer__menu">
+                <a href="#about-us">About us</a>
+                <a href="#classes">Classes</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contacts" id="contacts">Contact us</a>
+            </nav>
+        </div>
     </div>
     <div class="footer__divider"></div>
     <br>
     <div class="sub__footer">
-      <div class="sub__footer_left-block">
-        <p class="copiright">© Created by</p>
-      </div>
-      <div class="sub__footer_right-block">
-        <p class="rights">All rights Reserved</p>
-      </div>
+        <div class="sub__footer_left-block">
+            <p class="copiright">© Created by</p>
+        </div>
+        <div class="sub__footer_right-block">
+            <p class="rights">All rights Reserved</p>
+        </div>
     </div>
-  </footer>
+</footer>
 
-  <script src="js/header.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
-  <script src="js\testimonials-carousel.js"></script>
-  <script src="js\lightslider.js"></script>
-  <script src="js\upbutton.js"></script>
-  <script src="js\index.js"></script>
-  <script src="js\contacts-datepicker.js"></script>
+<script src="js/header.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+<script src="js\testimonials-carousel.js"></script>
+<script src="js\lightslider.js"></script>
+<script src="js\upbutton.js"></script>
+<script src="js\index.js"></script>
+<script src="js\contacts-datepicker.js"></script>
 </body>
 
 </html>
