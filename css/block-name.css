@@ -10,7 +10,7 @@
     font-size: 26px;
     color: var(--brand-color);
     text-align: center;
-  }
+}
 
 .meet__block-name {
     display: block;
@@ -39,34 +39,51 @@ div.block-name aside.meet__block-name {
     display: flex;
     height: 600px;
     margin-top: 60px;
+    justify-content: center;
 }
- 
-.meetcoacher-tom {
-    background-image: url(../css/img_css/coashe__tombellso.png);
+
+.meetcoacher-item {
     background-size: cover;
     margin: 5px;
     text-align: center;
+    width: 370px;
+    height: 460px;
+    cursor: pointer;
+    position: relative;
+}
+
+.meetcoacher-tom {
+    background-image: url(../css/img_css/coashe__tombellso.png);
 }
 
 .meetcoacher-susan {
     background-image: url(../css/img_css/coashe__susanhooler.png);
-    background-size: cover;
-    margin: 5px;
-    text-align: center;
 }
 
 .meetcoacher-daniel {
     background-image: url(../css/img_css/coashe__danieljackson.png);
-    background-size: cover;
-    margin: 5px;
-    text-align: center;
 }
 
-.coache {
-    height: 10em;
-    display: flex;
-    align-items: center;
-    justify-items: center;
+.meetcoacher-item-text h3 {
+    font-size: 36px;
     color: #fff;
-    text-align: center;
+}
+
+.meetcoacher-item-text {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100%;
+    transition: .5s;
+}
+
+.meetcoacher-item:hover .meetcoacher-item-text {
+    display: flex;
+    background: #0000009e;
+}
+
+.prl-20 {
+    padding: 0 20px;
 }
