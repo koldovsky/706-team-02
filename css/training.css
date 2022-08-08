@@ -2,7 +2,10 @@
 	background-color: #16120f;
 	padding: 50px 0 100px;
 }
-
+.training-bg {
+	height: 220px;
+	background: url(https://res2.weblium.site/res/5f365e3e6e81a2002141b4ff/5f5babdfd1524000214faf31_optimized_2560.webp) 50.94% 24.7% / cover no-repeat, rgb(255, 255, 255);
+}
 .training-content {
 	max-width: 1200px;
 	padding: 0 15px;
