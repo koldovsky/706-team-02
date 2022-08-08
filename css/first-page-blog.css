@@ -101,6 +101,7 @@
 .second-image-container {
     position: relative;
     display: flex;
+    
 }
 
 
@@ -236,3 +237,42 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+.blog__carousel img{
+    width: 200px;
+    display: block;
+    margin-bottom: 70px;
+    min-height: 20px;
+    max-height: 130px;
+    
+}
+.blog__carousel {
+    display: block;
+    height: 150px;
+}
+
+.carousel__slides {
+    margin: auto;
+}
+
+
+.blog__carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-carousel__btn-next {
+    width: 30px;
+    height: 25px;
+}
+
+.blog-carousel__btn-prev {
+    width: 30px;
+    height: 25px;
+}
+
+
+  
+
+
+
