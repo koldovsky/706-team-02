@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    background: url(../img/header__man-woman.png) center center no-repeat;
+    background: url(../img/header__man-woman.png) 67% center no-repeat;
     background-size: cover;
 }
 
@@ -33,7 +33,8 @@ a {
     display: flex;
     padding: 20px 0;
     margin: 0 auto;
-    min-width: 1200px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .container-menu {
@@ -71,13 +72,6 @@ a {
 .header__icons a {
     margin: 0 10px;
 }
-
-
-/*
-.header__menu, .header__icons {
-  display: none;
-}
-*/
 
 .burger {
     position: relative;
@@ -170,7 +164,6 @@ a {
     transition: .4s;
     display: none;
 }
-
 
 .header__title {
     display: flex;
