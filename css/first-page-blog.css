@@ -27,6 +27,8 @@
     align-items: flex-start;
     height: 350px !important;
     justify-content: space-around;
+    object-fit: cover;
+   
 }
 
 .first-image-text {
@@ -95,6 +97,7 @@
 .blog-second-img {
     width: 500px;
     height: 450px;
+    
 }
 
 
